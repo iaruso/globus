@@ -1,0 +1,112 @@
+:root {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-size: calc(16px + (20 - 16) * (100vw - 1080px) / (2160 - 1080));
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color-scheme: light dark;
+
+  /* Neutrals */
+  --black:     #1A1A1A;
+  --midnight:  #2B2B2B;
+  --charcoal:  #3D4145;
+  --slate:     #505A62;
+  --nevada:    #6B7785;
+  --ash:       #ADB5BD;
+  --silver:    #DEE2E6;
+  --porcelain: #EBEEF0;
+  --cloud:     #F8F9FA;
+  --polar:     #FCFDFE;
+  --white:     #FFF;
+
+  /* */
+  --border-width: 0.05rem;
+}
+
+div#root.light {
+  --basic-min: #ADB5BD;
+  --basic-max: #3D4145;
+  --trade-min: #F9F1AF;
+  --trade-max: #C7B304;
+  --social-min: #CDE1FF;
+  --social-max: #2E68E7;
+  --environment-min: #E4F1DC;
+  --environment-max: #26952C;
+  --economic-min: #FBDFB0;
+  --economic-max: #A35207;
+  --development-min: #D4F4F1;
+  --development-max: #1E9883;
+
+  --container-bg: var(--white);
+  --border-color: var(--silver);
+  --text-color: var(--midnight);
+  --placeholder-color: var(--nevada);
+  --logo-color: var(--slate);
+  --icon-color: var(--slate);
+  --input-hover-bg: var(--cloud);
+}
+
+div#root.dark {
+  --basic-min: #C1C7CE;
+  --basic-max: #546770;
+  --trade-min: #FBF1B2;
+  --trade-max: #A59400;
+  --social-min: #B2C8FF;
+  --social-max: #3349AA;
+  --environment-min: #C9E7C1;
+  --environment-max: #3E8A37;
+  --economic-min: #FFCBA2;
+  --economic-max: #8C4E00;
+  --development-min: #A9E3DD;
+  --development-max: #156E60;
+
+  --container-bg: var(--black);
+  --border-color: var(--midnight);
+  --text-color: var(--silver);
+  --placeholder-color: var(--ash);
+  --logo-color: var(--ash);
+  --icon-color: var(--ash);
+  --input-hover-bg: var(--midnight);
+}
+
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, span, ul, li{
+  margin: 0;
+}
+
+body {
+  height: 100dvh;
+  width: 100dvw;
+  margin: 0;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media screen and (max-width: 1440px){
+  :root {
+    font-size: calc(16px + (20 - 16) * (100vw - 768px) / (1440 - 768));
+  }
+}
+
+@media screen and (max-width: 768px){
+  :root {
+    font-size: calc(16px + (20 - 16) * (100vw - 300px) / (768 - 300));
+  }
+}
+

@@ -1,0 +1,5 @@
+{
+  "buildCommand": "vite build",
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }],
+  "cleanUrls": true
+}

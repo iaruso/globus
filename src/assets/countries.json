@@ -1,0 +1,969 @@
+{
+  "countriesCollection": {
+    "AFG": {
+      "name": "country.afg.name",
+      "capital": "country.afg.capital",
+      "iso2": "AF"
+    },
+    "ALB": {
+      "name": "country.alb.name",
+      "capital": "country.alb.capital",
+      "iso2": "AL"
+    },
+    "DZA": {
+      "name": "country.dza.name",
+      "capital": "country.dza.capital",
+      "iso2": "DZ"
+    },
+    "AND": {
+      "name": "country.and.name",
+      "capital": "country.and.capital",
+      "iso2": "AD"
+    },
+    "AGO": {
+      "name": "country.ago.name",
+      "capital": "country.ago.capital",
+      "iso2": "AO"
+    },
+    "ATG": {
+      "name": "country.atg.name",
+      "capital": "country.atg.capital",
+      "iso2": "AG"
+    },
+    "ARG": {
+      "name": "country.arg.name",
+      "capital": "country.arg.capital",
+      "iso2": "AR"
+    },
+    "ARM": {
+      "name": "country.arm.name",
+      "capital": "country.arm.capital",
+      "iso2": "AM"
+    },
+    "AUS": {
+      "name": "country.aus.name",
+      "capital": "country.aus.capital",
+      "iso2": "AU"
+    },
+    "AUT": {
+      "name": "country.aut.name",
+      "capital": "country.aut.capital",
+      "iso2": "AT"
+    },
+    "AZE": {
+      "name": "country.aze.name",
+      "capital": "country.aze.capital",
+      "iso2": "AZ"
+    },
+    "BHS": {
+      "name": "country.bhs.name",
+      "capital": "country.bhs.capital",
+      "iso2": "BS"
+    },
+    "BHR": {
+      "name": "country.bhr.name",
+      "capital": "country.bhr.capital",
+      "iso2": "BH"
+    },
+    "BGD": {
+      "name": "country.bgd.name",
+      "capital": "country.bgd.capital",
+      "iso2": "BD"
+    },
+    "BRB": {
+      "name": "country.brb.name",
+      "capital": "country.brb.capital",
+      "iso2": "BB"
+    },
+    "BLR": {
+      "name": "country.blr.name",
+      "capital": "country.blr.capital",
+      "iso2": "BY"
+    },
+    "BEL": {
+      "name": "country.bel.name",
+      "capital": "country.bel.capital",
+      "iso2": "BE"
+    },
+    "BLZ": {
+      "name": "country.blz.name",
+      "capital": "country.blz.capital",
+      "iso2": "BZ"
+    },
+    "BEN": {
+      "name": "country.ben.name",
+      "capital": "country.ben.capital",
+      "iso2": "BJ"
+    },
+    "BTN": {
+      "name": "country.btn.name",
+      "capital": "country.btn.capital",
+      "iso2": "BT"
+    },
+    "BOL": {
+      "name": "country.bol.name",
+      "capital": "country.bol.capital",
+      "iso2": "BO"
+    },
+    "BIH": {
+      "name": "country.bih.name",
+      "capital": "country.bih.capital",
+      "iso2": "BA"
+    },
+    "BWA": {
+      "name": "country.bwa.name",
+      "capital": "country.bwa.capital",
+      "iso2": "BW"
+    },
+    "BRA": {
+      "name": "country.bra.name",
+      "capital": "country.bra.capital",
+      "iso2": "BR"
+    },
+    "BRN": {
+      "name": "country.brn.name",
+      "capital": "country.brn.capital",
+      "iso2": "BN"
+    },
+    "BGR": {
+      "name": "country.bgr.name",
+      "capital": "country.bgr.capital",
+      "iso2": "BG"
+    },
+    "BFA": {
+      "name": "country.bfa.name",
+      "capital": "country.bfa.capital",
+      "iso2": "BF"
+    },
+    "BDI": {
+      "name": "country.bdi.name",
+      "capital": "country.bdi.capital",
+      "iso2": "BI"
+    },
+    "CPV": {
+      "name": "country.cpv.name",
+      "capital": "country.cpv.capital",
+      "iso2": "CV"
+    },
+    "KHM": {
+      "name": "country.khm.name",
+      "capital": "country.khm.capital",
+      "iso2": "KH"
+    },
+    "CMR": {
+      "name": "country.cmr.name",
+      "capital": "country.cmr.capital",
+      "iso2": "CM"
+    },
+    "CAN": {
+      "name": "country.can.name",
+      "capital": "country.can.capital",
+      "iso2": "CA"
+    },
+    "CAF": {
+      "name": "country.caf.name",
+      "capital": "country.caf.capital",
+      "iso2": "CF"
+    },
+    "TCD": {
+      "name": "country.tcd.name",
+      "capital": "country.tcd.capital",
+      "iso2": "TD"
+    },
+    "CHL": {
+      "name": "country.chl.name",
+      "capital": "country.chl.capital",
+      "iso2": "CL"
+    },
+    "CHN": {
+      "name": "country.chn.name",
+      "capital": "country.chn.capital",
+      "iso2": "CN"
+    },
+    "COL": {
+      "name": "country.col.name",
+      "capital": "country.col.capital",
+      "iso2": "CO"
+    },
+    "COM": {
+      "name": "country.com.name",
+      "capital": "country.com.capital",
+      "iso2": "KM"
+    },
+    "COG": {
+      "name": "country.cog.name",
+      "capital": "country.cog.capital",
+      "iso2": "CG"
+    },
+    "COD": {
+      "name": "country.cod.name",
+      "capital": "country.cod.capital",
+      "iso2": "CD"
+    },
+    "CRI": {
+      "name": "country.cri.name",
+      "capital": "country.cri.capital",
+      "iso2": "CR"
+    },
+    "HRV": {
+      "name": "country.hrv.name",
+      "capital": "country.hrv.capital",
+      "iso2": "HR"
+    },
+    "CUB": {
+      "name": "country.cub.name",
+      "capital": "country.cub.capital",
+      "iso2": "CU"
+    },
+    "CYP": {
+      "name": "country.cyp.name",
+      "capital": "country.cyp.capital",
+      "iso2": "CY"
+    },
+    "CZE": {
+      "name": "country.cze.name",
+      "capital": "country.cze.capital",
+      "iso2": "CZ"
+    },
+    "DNK": {
+      "name": "country.dnk.name",
+      "capital": "country.dnk.capital",
+      "iso2": "DK"
+    },
+    "DJI": {
+      "name": "country.dji.name",
+      "capital": "country.dji.capital",
+      "iso2": "DJ"
+    },
+    "DMA": {
+      "name": "country.dma.name",
+      "capital": "country.dma.capital",
+      "iso2": "DM"
+    },
+    "DOM": {
+      "name": "country.dom.name",
+      "capital": "country.dom.capital",
+      "iso2": "DO"
+    },
+    "TLS": {
+      "name": "country.tls.name",
+      "capital": "country.tls.capital",
+      "iso2": "TL"
+    },
+    "ECU": {
+      "name": "country.ecu.name",
+      "capital": "country.ecu.capital",
+      "iso2": "EC"
+    },
+    "EGY": {
+      "name": "country.egy.name",
+      "capital": "country.egy.capital",
+      "iso2": "EG"
+    },
+    "SLV": {
+      "name": "country.slv.name",
+      "capital": "country.slv.capital",
+      "iso2": "SV"
+    },
+    "GNQ": {
+      "name": "country.gnq.name",
+      "capital": "country.gnq.capital",
+      "iso2": "GQ"
+    },
+    "ERI": {
+      "name": "country.eri.name",
+      "capital": "country.eri.capital",
+      "iso2": "ER"
+    },
+    "EST": {
+      "name": "country.est.name",
+      "capital": "country.est.capital",
+      "iso2": "EE"
+    },
+    "SWZ": {
+      "name": "country.swz.name",
+      "capital": "country.swz.capital",
+      "iso2": "SZ"
+    },
+    "ETH": {
+      "name": "country.eth.name",
+      "capital": "country.eth.capital",
+      "iso2": "ET"
+    },
+    "FJI": {
+      "name": "country.fji.name",
+      "capital": "country.fji.capital",
+      "iso2": "FJ"
+    },
+    "FIN": {
+      "name": "country.fin.name",
+      "capital": "country.fin.capital",
+      "iso2": "FI"
+    },
+    "FRA": {
+      "name": "country.fra.name",
+      "capital": "country.fra.capital",
+      "iso2": "FR"
+    },
+    "GAB": {
+      "name": "country.gab.name",
+      "capital": "country.gab.capital",
+      "iso2": "GA"
+    },
+    "GMB": {
+      "name": "country.gmb.name",
+      "capital": "country.gmb.capital",
+      "iso2": "GM"
+    },
+    "GEO": {
+      "name": "country.geo.name",
+      "capital": "country.geo.capital",
+      "iso2": "GE"
+    },
+    "DEU": {
+      "name": "country.deu.name",
+      "capital": "country.deu.capital",
+      "iso2": "DE"
+    },
+    "GHA": {
+      "name": "country.gha.name",
+      "capital": "country.gha.capital",
+      "iso2": "GH"
+    },
+    "GRC": {
+      "name": "country.grc.name",
+      "capital": "country.grc.capital",
+      "iso2": "GR"
+    },
+    "GRD": {
+      "name": "country.grd.name",
+      "capital": "country.grd.capital",
+      "iso2": "GD"
+    },
+    "GTM": {
+      "name": "country.gtm.name",
+      "capital": "country.gtm.capital",
+      "iso2": "GT"
+    },
+    "GIN": {
+      "name": "country.gin.name",
+      "capital": "country.gin.capital",
+      "iso2": "GN"
+    },
+    "GNB": {
+      "name": "country.gnb.name",
+      "capital": "country.gnb.capital",
+      "iso2": "GW"
+    },
+    "GUY": {
+      "name": "country.guy.name",
+      "capital": "country.guy.capital",
+      "iso2": "GY"
+    },
+    "HTI": {
+      "name": "country.hti.name",
+      "capital": "country.hti.capital",
+      "iso2": "HT"
+    },
+    "HND": {
+      "name": "country.hnd.name",
+      "capital": "country.hnd.capital",
+      "iso2": "HN"
+    },
+    "HUN": {
+      "name": "country.hun.name",
+      "capital": "country.hun.capital",
+      "iso2": "HU"
+    },
+    "ISL": {
+      "name": "country.isl.name",
+      "capital": "country.isl.capital",
+      "iso2": "IS"
+    },
+    "IND": {
+      "name": "country.ind.name",
+      "capital": "country.ind.capital",
+      "iso2": "IN"
+    },
+    "IDN": {
+      "name": "country.idn.name",
+      "capital": "country.idn.capital",
+      "iso2": "ID"
+    },
+    "IRN": {
+      "name": "country.irn.name",
+      "capital": "country.irn.capital",
+      "iso2": "IR"
+    },
+    "IRQ": {
+      "name": "country.irq.name",
+      "capital": "country.irq.capital",
+      "iso2": "IQ"
+    },
+    "IRL": {
+      "name": "country.irl.name",
+      "capital": "country.irl.capital",
+      "iso2": "IE"
+    },
+    "ISR": {
+      "name": "country.isr.name",
+      "capital": "country.isr.capital",
+      "iso2": "IL"
+    },
+    "ITA": {
+      "name": "country.ita.name",
+      "capital": "country.ita.capital",
+      "iso2": "IT"
+    },
+    "CIV": {
+      "name": "country.civ.name",
+      "capital": "country.civ.capital",
+      "iso2": "CI"
+    },
+    "JAM": {
+      "name": "country.jam.name",
+      "capital": "country.jam.capital",
+      "iso2": "JM"
+    },
+    "JPN": {
+      "name": "country.jpn.name",
+      "capital": "country.jpn.capital",
+      "iso2": "JP"
+    },
+    "JOR": {
+      "name": "country.jor.name",
+      "capital": "country.jor.capital",
+      "iso2": "JO"
+    },
+    "KAZ": {
+      "name": "country.kaz.name",
+      "capital": "country.kaz.capital",
+      "iso2": "KZ"
+    },
+    "KEN": {
+      "name": "country.ken.name",
+      "capital": "country.ken.capital",
+      "iso2": "KE"
+    },
+    "KIR": {
+      "name": "country.kir.name",
+      "capital": "country.kir.capital",
+      "iso2": "KI"
+    },
+    "PRK": {
+      "name": "country.prk.name",
+      "capital": "country.prk.capital",
+      "iso2": "KP"
+    },
+    "KOR": {
+      "name": "country.kor.name",
+      "capital": "country.kor.capital",
+      "iso2": "KR"
+    },
+    "KWT": {
+      "name": "country.kwt.name",
+      "capital": "country.kwt.capital",
+      "iso2": "KW"
+    },
+    "KGZ": {
+      "name": "country.kgz.name",
+      "capital": "country.kgz.capital",
+      "iso2": "KG"
+    },
+    "LAO": {
+      "name": "country.lao.name",
+      "capital": "country.lao.capital",
+      "iso2": "LA"
+    },
+    "LVA": {
+      "name": "country.lva.name",
+      "capital": "country.lva.capital",
+      "iso2": "LV"
+    },
+    "LBN": {
+      "name": "country.lbn.name",
+      "capital": "country.lbn.capital",
+      "iso2": "LB"
+    },
+    "LSO": {
+      "name": "country.lso.name",
+      "capital": "country.lso.capital",
+      "iso2": "LS"
+    },
+    "LBR": {
+      "name": "country.lbr.name",
+      "capital": "country.lbr.capital",
+      "iso2": "LR"
+    },
+    "LBY": {
+      "name": "country.lby.name",
+      "capital": "country.lby.capital",
+      "iso2": "LY"
+    },
+    "LIE": {
+      "name": "country.lie.name",
+      "capital": "country.lie.capital",
+      "iso2": "LI"
+    },
+    "LTU": {
+      "name": "country.ltu.name",
+      "capital": "country.ltu.capital",
+      "iso2": "LT"
+    },
+    "LUX": {
+      "name": "country.lux.name",
+      "capital": "country.lux.capital",
+      "iso2": "LU"
+    },
+    "MDG": {
+      "name": "country.mdg.name",
+      "capital": "country.mdg.capital",
+      "iso2": "MG"
+    },
+    "MWI": {
+      "name": "country.mwi.name",
+      "capital": "country.mwi.capital",
+      "iso2": "MW"
+    },
+    "MYS": {
+      "name": "country.mys.name",
+      "capital": "country.mys.capital",
+      "iso2": "MY"
+    },
+    "MDV": {
+      "name": "country.mdv.name",
+      "capital": "country.mdv.capital",
+      "iso2": "MV"
+    },
+    "MLI": {
+      "name": "country.mli.name",
+      "capital": "country.mli.capital",
+      "iso2": "ML"
+    },
+    "MLT": {
+      "name": "country.mlt.name",
+      "capital": "country.mlt.capital",
+      "iso2": "MT"
+    },
+    "MHL": {
+      "name": "country.mhl.name",
+      "capital": "country.mhl.capital",
+      "iso2": "MH"
+    },
+    "MRT": {
+      "name": "country.mrt.name",
+      "capital": "country.mrt.capital",
+      "iso2": "MR"
+    },
+    "MUS": {
+      "name": "country.mus.name",
+      "capital": "country.mus.capital",
+      "iso2": "MU"
+    },
+    "MEX": {
+      "name": "country.mex.name",
+      "capital": "country.mex.capital",
+      "iso2": "MX"
+    },
+    "FSM": {
+      "name": "country.fsm.name",
+      "capital": "country.fsm.capital",
+      "iso2": "FM"
+    },
+    "MDA": {
+      "name": "country.mda.name",
+      "capital": "country.mda.capital",
+      "iso2": "MD"
+    },
+    "MCO": {
+      "name": "country.mco.name",
+      "capital": "country.mco.capital",
+      "iso2": "MC"
+    },
+    "MNG": {
+      "name": "country.mng.name",
+      "capital": "country.mng.capital",
+      "iso2": "MN"
+    },
+    "MNE": {
+      "name": "country.mne.name",
+      "capital": "country.mne.capital",
+      "iso2": "ME"
+    },
+    "MAR": {
+      "name": "country.mar.name",
+      "capital": "country.mar.capital",
+      "iso2": "MA"
+    },
+    "MOZ": {
+      "name": "country.moz.name",
+      "capital": "country.moz.capital",
+      "iso2": "MZ"
+    },
+    "MMR": {
+      "name": "country.mmr.name",
+      "capital": "country.mmr.capital",
+      "iso2": "MM"
+    },
+    "NAM": {
+      "name": "country.nam.name",
+      "capital": "country.nam.capital",
+      "iso2": "NA"
+    },
+    "NRU": {
+      "name": "country.nru.name",
+      "capital": "country.nru.capital",
+      "iso2": "NR"
+    },
+    "NPL": {
+      "name": "country.npl.name",
+      "capital": "country.npl.capital",
+      "iso2": "NP"
+    },
+    "NLD": {
+      "name": "country.nld.name",
+      "capital": "country.nld.capital",
+      "iso2": "NL"
+    },
+    "NZL": {
+      "name": "country.nzl.name",
+      "capital": "country.nzl.capital",
+      "iso2": "NZ"
+    },
+    "NIC": {
+      "name": "country.nic.name",
+      "capital": "country.nic.capital",
+      "iso2": "NI"
+    },
+    "NER": {
+      "name": "country.ner.name",
+      "capital": "country.ner.capital",
+      "iso2": "NE"
+    },
+    "NGA": {
+      "name": "country.nga.name",
+      "capital": "country.nga.capital",
+      "iso2": "NG"
+    },
+    "NOR": {
+      "name": "country.nor.name",
+      "capital": "country.nor.capital",
+      "iso2": "NO"
+    },
+    "OMN": {
+      "name": "country.omn.name",
+      "capital": "country.omn.capital",
+      "iso2": "OM"
+    },
+    "PAK": {
+      "name": "country.pak.name",
+      "capital": "country.pak.capital",
+      "iso2": "PK"
+    },
+    "PLW": {
+      "name": "country.plw.name",
+      "capital": "country.plw.capital",
+      "iso2": "PW"
+    },
+    "PAN": {
+      "name": "country.pan.name",
+      "capital": "country.pan.capital",
+      "iso2": "PA"
+    },
+    "PNG": {
+      "name": "country.png.name",
+      "capital": "country.png.capital",
+      "iso2": "PG"
+    },
+    "PRY": {
+      "name": "country.pry.name",
+      "capital": "country.pry.capital",
+      "iso2": "PY"
+    },
+    "PER": {
+      "name": "country.per.name",
+      "capital": "country.per.capital",
+      "iso2": "PE"
+    },
+    "PHL": {
+      "name": "country.phl.name",
+      "capital": "country.phl.capital",
+      "iso2": "PH"
+    },
+    "POL": {
+      "name": "country.pol.name",
+      "capital": "country.pol.capital",
+      "iso2": "PL"
+    },
+    "PRT": {
+      "name": "country.prt.name",
+      "capital": "country.prt.capital",
+      "iso2": "PT"
+    },
+    "QAT": {
+      "name": "country.qat.name",
+      "capital": "country.qat.capital",
+      "iso2": "QA"
+    },
+    "ROU": {
+      "name": "country.rou.name",
+      "capital": "country.rou.capital",
+      "iso2": "RO"
+    },
+    "RUS": {
+      "name": "country.rus.name",
+      "capital": "country.rus.capital",
+      "iso2": "RU"
+    },
+    "RWA": {
+      "name": "country.rwa.name",
+      "capital": "country.rwa.capital",
+      "iso2": "RW"
+    },
+    "KNA": {
+      "name": "country.kna.name",
+      "capital": "country.kna.capital",
+      "iso2": "KN"
+    },
+    "LCA": {
+      "name": "country.lca.name",
+      "capital": "country.lca.capital",
+      "iso2": "LC"
+    },
+    "VCT": {
+      "name": "country.vct.name",
+      "capital": "country.vct.capital",
+      "iso2": "VC"
+    },
+    "WSM": {
+      "name": "country.wsm.name",
+      "capital": "country.wsm.capital",
+      "iso2": "WS"
+    },
+    "SMR": {
+      "name": "country.smr.name",
+      "capital": "country.smr.capital",
+      "iso2": "SM"
+    },
+    "STP": {
+      "name": "country.stp.name",
+      "capital": "country.stp.capital",
+      "iso2": "ST"
+    },
+    "SAU": {
+      "name": "country.sau.name",
+      "capital": "country.sau.capital",
+      "iso2": "SA"
+    },
+    "SEN": {
+      "name": "country.sen.name",
+      "capital": "country.sen.capital",
+      "iso2": "SN"
+    },
+    "SRB": {
+      "name": "country.srb.name",
+      "capital": "country.srb.capital",
+      "iso2": "RS"
+    },
+    "SYC": {
+      "name": "country.syc.name",
+      "capital": "country.syc.capital",
+      "iso2": "SC"
+    },
+    "SLE": {
+      "name": "country.sle.name",
+      "capital": "country.sle.capital",
+      "iso2": "SL"
+    },
+    "SGP": {
+      "name": "country.sgp.name",
+      "capital": "country.sgp.capital",
+      "iso2": "SG"
+    },
+    "SVK": {
+      "name": "country.svk.name",
+      "capital": "country.svk.capital",
+      "iso2": "SK"
+    },
+    "SVN": {
+      "name": "country.svn.name",
+      "capital": "country.svn.capital",
+      "iso2": "SI"
+    },
+    "SLB": {
+      "name": "country.slb.name",
+      "capital": "country.slb.capital",
+      "iso2": "SB"
+    },
+    "SOM": {
+      "name": "country.som.name",
+      "capital": "country.som.capital",
+      "iso2": "SO"
+    },
+    "ZAF": {
+      "name": "country.zaf.name",
+      "capital": "country.zaf.capital",
+      "iso2": "ZA"
+    },
+    "SSD": {
+      "name": "country.ssd.name",
+      "capital": "country.ssd.capital",
+      "iso2": "SS"
+    },
+    "ESP": {
+      "name": "country.esp.name",
+      "capital": "country.esp.capital",
+      "iso2": "ES"
+    },
+    "LKA": {
+      "name": "country.lka.name",
+      "capital": "country.lka.capital",
+      "iso2": "LK"
+    },
+    "SDN": {
+      "name": "country.sdn.name",
+      "capital": "country.sdn.capital",
+      "iso2": "SD"
+    },
+    "SUR": {
+      "name": "country.sur.name",
+      "capital": "country.sur.capital",
+      "iso2": "SR"
+    },
+    "SWE": {
+      "name": "country.swe.name",
+      "capital": "country.swe.capital",
+      "iso2": "SE"
+    },
+    "CHE": {
+      "name": "country.che.name",
+      "capital": "country.che.capital",
+      "iso2": "CH"
+    },
+    "SYR": {
+      "name": "country.syr.name",
+      "capital": "country.syr.capital",
+      "iso2": "SY"
+    },
+    "TWN": {
+      "name": "country.twn.name",
+      "capital": "country.twn.capital",
+      "iso2": "TW"
+    },
+    "TJK": {
+      "name": "country.tjk.name",
+      "capital": "country.tjk.capital",
+      "iso2": "TJ"
+    },
+    "TZA": {
+      "name": "country.tza.name",
+      "capital": "country.tza.capital",
+      "iso2": "TZ"
+    },
+    "THA": {
+      "name": "country.tha.name",
+      "capital": "country.tha.capital",
+      "iso2": "TH"
+    },
+    "TGO": {
+      "name": "country.tgo.name",
+      "capital": "country.tgo.capital",
+      "iso2": "TG"
+    },
+    "TON": {
+      "name": "country.ton.name",
+      "capital": "country.ton.capital",
+      "iso2": "TO"
+    },
+    "TTO": {
+      "name": "country.tto.name",
+      "capital": "country.tto.capital",
+      "iso2": "TT"
+    },
+    "TUN": {
+      "name": "country.tun.name",
+      "capital": "country.tun.capital",
+      "iso2": "TN"
+    },
+    "TUR": {
+      "name": "country.tur.name",
+      "capital": "country.tur.capital",
+      "iso2": "TR"
+    },
+    "TKM": {
+      "name": "country.tkm.name",
+      "capital": "country.tkm.capital",
+      "iso2": "TM"
+    },
+    "TUV": {
+      "name": "country.tuv.name",
+      "capital": "country.tuv.capital",
+      "iso2": "TV"
+    },
+    "UGA": {
+      "name": "country.uga.name",
+      "capital": "country.uga.capital",
+      "iso2": "UG"
+    },
+    "UKR": {
+      "name": "country.ukr.name",
+      "capital": "country.ukr.capital",
+      "iso2": "UA"
+    },
+    "ARE": {
+      "name": "country.are.name",
+      "capital": "country.are.capital",
+      "iso2": "AE"
+    },
+    "GBR": {
+      "name": "country.gbr.name",
+      "capital": "country.gbr.capital",
+      "iso2": "GB"
+    },
+    "USA": {
+      "name": "country.usa.name",
+      "capital": "country.usa.capital",
+      "iso2": "US"
+    },
+    "URY": {
+      "name": "country.ury.name",
+      "capital": "country.ury.capital",
+      "iso2": "UY"
+    },
+    "UZB": {
+      "name": "country.uzb.name",
+      "capital": "country.uzb.capital",
+      "iso2": "UZ"
+    },
+    "VUT": {
+      "name": "country.vut.name",
+      "capital": "country.vut.capital",
+      "iso2": "VU"
+    },
+    "VEN": {
+      "name": "country.ven.name",
+      "capital": "country.ven.capital",
+      "iso2": "VE"
+    },
+    "VNM": {
+      "name": "country.vnm.name",
+      "capital": "country.vnm.capital",
+      "iso2": "VN"
+    },
+    "YEM": {
+      "name": "country.yem.name",
+      "capital": "country.yem.capital",
+      "iso2": "YE"
+    },
+    "ZMB": {
+      "name": "country.zmb.name",
+      "capital": "country.zmb.capital",
+      "iso2": "ZM"
+    },
+    "ZWE": {
+      "name": "country.zwe.name",
+      "capital": "country.zwe.capital",
+      "iso2": "ZW"
+    }
+  }
+}
