@@ -47,6 +47,10 @@ div#root.light {
   --logo-color: var(--slate);
   --icon-color: var(--slate);
   --input-hover-bg: var(--cloud);
+  --globe-button-bg: var(--porcelain);
+  --globe-button-bg-hover: var(--cloud);
+  --globe-button-border-color: var(--nevada);
+  --globe-button-text-color: var(--nevada);
 }
 
 div#root.dark {
@@ -70,13 +74,18 @@ div#root.dark {
   --logo-color: var(--ash);
   --icon-color: var(--ash);
   --input-hover-bg: var(--midnight);
+  --globe-button-bg: var(--black);
+  --globe-button-bg-hover: var(--midnight);
+  --globe-button-border-color: var(--black);
+  --globe-button-text-color: var(--ash);
 }
 
 
 #root {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 100dvh;
+  overflow: hidden;
 }
 
 * {
@@ -109,4 +118,3 @@ button:focus-visible {
     font-size: calc(16px + (20 - 16) * (100vw - 300px) / (768 - 300));
   }
 }
-

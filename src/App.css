@@ -6,6 +6,37 @@
   width: 100%;
   flex: 1;
   background-color: var(--container-bg);
+  height: 0;
+}
+
+#globe-visualizer {
+  height: 100%;
+}
+
+#globe-visualizer canvas {
+  cursor: grab !important;
+}
+
+.country-button {
+  cursor: pointer;
+  pointer-events: auto;
+  color: var(--globe-button-text-color) !important;
+  background-color: var(--globe-button-bg);
+  padding: 0.125rem 0.25rem;
+  height: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--globe-button-border-color) solid .05rem;
+  border-radius: 0.125rem;
+  font-weight: 500;
+  font-size: 0.625rem;
+  transition: background-color .2s ease-in-out;
+}
+
+.country-button:hover {
+  background-color: var(--globe-button-bg-hover);
+  z-index: 200 !important;
 }
 
 /* Navbar */
@@ -24,6 +55,8 @@ nav {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  position: relative;
+  z-index: 99999999999999;
 }
 
 nav .logo-area {

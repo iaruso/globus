@@ -16,7 +16,7 @@ const TranslateDropdown = forwardRef(({ setOpenTranslateDropdown }, ref) => {
     'es': 'es-ES',
     'fr': 'fr-FR',
     'de': 'de-DE',
-    'jp': 'jp-JP'
+    'ja': 'ja-JA'
   };
 
   const handleLanguageChange = (languageCode) => {

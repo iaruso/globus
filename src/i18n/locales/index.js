@@ -4,7 +4,7 @@ import portugueseTranslations from './pt-PT'
 import spanishTranslations from './es-ES'
 import frenchTranslations from './fr-FR'
 import germanTranslations from './de-DE'
-import japaneseTranslations from './jp-JP'
+import japaneseTranslations from './ja-JA'
 
 export default {
   'en-EN': englishTranslations,
@@ -13,5 +13,5 @@ export default {
   'es-ES': spanishTranslations,
   'fr-FR': frenchTranslations,
   'de-DE': germanTranslations,
-  'jp-JP': japaneseTranslations
+  'ja-JA': japaneseTranslations
 }

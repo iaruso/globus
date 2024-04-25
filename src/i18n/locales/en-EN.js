@@ -11,7 +11,7 @@ export default {
         es: 'Spanish',
         fr: 'French',
         de: 'German',
-        jp: 'Japanese'
+        ja: 'Japanese'
       },
       info: {
         description: 'Explore statistics between the various countries (according to The World Bank data).',
@@ -232,6 +232,14 @@ export default {
       cze: {
         name: 'Czech Republic',
         capital: 'Prague'
+      },
+      cod: {
+        name: 'Democratic Republic of the Congo',
+        capital: 'Kinshasa'
+      },
+      civ: {
+        name: "Côte d'Ivoire",
+        capital: 'Yamoussoukro'
       },
       dnk: {
         name: 'Denmark',
@@ -536,6 +544,10 @@ export default {
       mmr: {
         name: 'Myanmar (Burma)',
         capital: 'Naypyidaw'
+      },
+      mkd: {
+        name: 'North Macedonia',
+        capital: 'Skopje'
       },
       nam: {
         name: 'Namibia',

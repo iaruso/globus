@@ -11,7 +11,7 @@ export default {
         es: 'スペイン語',
         fr: 'フランス語',
         de: 'ドイツ語',
-        jp: '日本語'
+        ja: '日本語'
       },
       info: {
         description: 'さまざまな国々間の統計を探索します（世界銀行のデータに基づく）。 ',
@@ -232,6 +232,14 @@ export default {
       cze: {
         name: 'チェコ',
         capital: 'プラハ'
+      },
+      cod: {
+        name: 'コンゴ民主共和国',
+        capital: 'キンシャサ'
+      },
+      civ: {
+        name: 'コートジボワール',
+        capital: 'ヤムスクロ'
       },
       dnk: {
         name: 'デンマーク',
@@ -536,6 +544,10 @@ export default {
       mmr: {
         name: 'ミャンマー',
         capital: 'ネーピードー'
+      },
+      mkd: {
+        name: '北マケドニア',
+        capital: 'スコピエ'
       },
       nam: {
         name: 'ナミビア',

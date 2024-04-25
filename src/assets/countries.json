@@ -3,967 +3,1166 @@
     "AFG": {
       "name": "country.afg.name",
       "capital": "country.afg.capital",
-      "iso2": "AF"
+      "iso2": "AF",
+      "coordinates": [33.93911, 67.709953]
     },
     "ALB": {
       "name": "country.alb.name",
       "capital": "country.alb.capital",
-      "iso2": "AL"
+      "iso2": "AL",
+      "coordinates": [41.1533, 20.1683]
     },
     "DZA": {
       "name": "country.dza.name",
       "capital": "country.dza.capital",
-      "iso2": "DZ"
+      "iso2": "DZ",
+      "coordinates": [28.0339, 1.6596]
     },
     "AND": {
       "name": "country.and.name",
       "capital": "country.and.capital",
-      "iso2": "AD"
+      "iso2": "AD",
+      "coordinates": [42.546245, 1.601554]
     },
     "AGO": {
       "name": "country.ago.name",
       "capital": "country.ago.capital",
-      "iso2": "AO"
+      "iso2": "AO",
+      "coordinates": [-11.202692, 17.873887]
     },
     "ATG": {
       "name": "country.atg.name",
       "capital": "country.atg.capital",
-      "iso2": "AG"
+      "iso2": "AG",
+      "coordinates": [17.0608, -61.7964]
     },
     "ARG": {
       "name": "country.arg.name",
       "capital": "country.arg.capital",
-      "iso2": "AR"
+      "iso2": "AR",
+      "coordinates": [-38.4161, -63.6167]
     },
     "ARM": {
       "name": "country.arm.name",
       "capital": "country.arm.capital",
-      "iso2": "AM"
+      "iso2": "AM",
+      "coordinates": [40.069099, 45.038189]
     },
     "AUS": {
       "name": "country.aus.name",
       "capital": "country.aus.capital",
-      "iso2": "AU"
+      "iso2": "AU",
+      "coordinates": [-25.274398, 133.775136]
     },
     "AUT": {
       "name": "country.aut.name",
       "capital": "country.aut.capital",
-      "iso2": "AT"
+      "iso2": "AT",
+      "coordinates": [47.516231, 14.550072]
     },
     "AZE": {
       "name": "country.aze.name",
       "capital": "country.aze.capital",
-      "iso2": "AZ"
+      "iso2": "AZ",
+      "coordinates": [40.143105, 47.576927]
     },
     "BHS": {
       "name": "country.bhs.name",
       "capital": "country.bhs.capital",
-      "iso2": "BS"
+      "iso2": "BS",
+      "coordinates": [25.0343, -77.3963]
     },
     "BHR": {
       "name": "country.bhr.name",
       "capital": "country.bhr.capital",
-      "iso2": "BH"
+      "iso2": "BH",
+      "coordinates": [25.930414, 50.637772]
     },
     "BGD": {
       "name": "country.bgd.name",
       "capital": "country.bgd.capital",
-      "iso2": "BD"
+      "iso2": "BD",
+      "coordinates": [23.684994, 90.356331]
     },
     "BRB": {
       "name": "country.brb.name",
       "capital": "country.brb.capital",
-      "iso2": "BB"
+      "iso2": "BB",
+      "coordinates": [13.193887, -59.543198]
     },
     "BLR": {
       "name": "country.blr.name",
       "capital": "country.blr.capital",
-      "iso2": "BY"
+      "iso2": "BY",
+      "coordinates": [53.709807, 27.953389]
     },
     "BEL": {
       "name": "country.bel.name",
       "capital": "country.bel.capital",
-      "iso2": "BE"
+      "iso2": "BE",
+      "coordinates": [50.8503, 4.3517]
     },
     "BLZ": {
       "name": "country.blz.name",
       "capital": "country.blz.capital",
-      "iso2": "BZ"
+      "iso2": "BZ",
+      "coordinates": [17.1899, -88.4976]
     },
     "BEN": {
       "name": "country.ben.name",
       "capital": "country.ben.capital",
-      "iso2": "BJ"
+      "iso2": "BJ",
+      "coordinates": [9.3077, 2.3158]
     },
     "BTN": {
       "name": "country.btn.name",
       "capital": "country.btn.capital",
-      "iso2": "BT"
+      "iso2": "BT",
+      "coordinates": [27.5142, 90.4336]
     },
     "BOL": {
       "name": "country.bol.name",
       "capital": "country.bol.capital",
-      "iso2": "BO"
+      "iso2": "BO",
+      "coordinates": [-16.2902, -63.5887]
     },
     "BIH": {
       "name": "country.bih.name",
       "capital": "country.bih.capital",
-      "iso2": "BA"
+      "iso2": "BA",
+      "coordinates": [43.915886, 17.679076]
     },
     "BWA": {
       "name": "country.bwa.name",
       "capital": "country.bwa.capital",
-      "iso2": "BW"
+      "iso2": "BW",
+      "coordinates": [-22.328474, 24.684866]
     },
     "BRA": {
       "name": "country.bra.name",
       "capital": "country.bra.capital",
-      "iso2": "BR"
+      "iso2": "BR",
+      "coordinates": [-14.235004, -51.92528]
     },
     "BRN": {
       "name": "country.brn.name",
       "capital": "country.brn.capital",
-      "iso2": "BN"
+      "iso2": "BN",
+      "coordinates": [4.5353, 114.7277]
     },
     "BGR": {
       "name": "country.bgr.name",
       "capital": "country.bgr.capital",
-      "iso2": "BG"
+      "iso2": "BG",
+      "coordinates": [42.733883, 25.48583]
     },
     "BFA": {
       "name": "country.bfa.name",
       "capital": "country.bfa.capital",
-      "iso2": "BF"
+      "iso2": "BF",
+      "coordinates": [12.2383, -1.5616]
     },
     "BDI": {
       "name": "country.bdi.name",
       "capital": "country.bdi.capital",
-      "iso2": "BI"
+      "iso2": "BI",
+      "coordinates": [-3.3731, 29.9189]
     },
     "CPV": {
       "name": "country.cpv.name",
       "capital": "country.cpv.capital",
-      "iso2": "CV"
+      "iso2": "CV",
+      "coordinates": [16.5388, -23.0418]
     },
     "KHM": {
       "name": "country.khm.name",
       "capital": "country.khm.capital",
-      "iso2": "KH"
+      "iso2": "KH",
+      "coordinates": [12.5657, 104.991]
     },
     "CMR": {
       "name": "country.cmr.name",
       "capital": "country.cmr.capital",
-      "iso2": "CM"
+      "iso2": "CM",
+      "coordinates": [7.3697, 12.3547]
     },
     "CAN": {
       "name": "country.can.name",
       "capital": "country.can.capital",
-      "iso2": "CA"
+      "iso2": "CA",
+      "coordinates": [56.1304, -106.3468]
     },
     "CAF": {
       "name": "country.caf.name",
       "capital": "country.caf.capital",
-      "iso2": "CF"
+      "iso2": "CF",
+      "coordinates": [6.6111, 20.9394]
     },
     "TCD": {
       "name": "country.tcd.name",
       "capital": "country.tcd.capital",
-      "iso2": "TD"
-    },
-    "CHL": {
-      "name": "country.chl.name",
-      "capital": "country.chl.capital",
-      "iso2": "CL"
-    },
-    "CHN": {
-      "name": "country.chn.name",
-      "capital": "country.chn.capital",
-      "iso2": "CN"
-    },
-    "COL": {
-      "name": "country.col.name",
-      "capital": "country.col.capital",
-      "iso2": "CO"
-    },
-    "COM": {
-      "name": "country.com.name",
-      "capital": "country.com.capital",
-      "iso2": "KM"
-    },
-    "COG": {
-      "name": "country.cog.name",
-      "capital": "country.cog.capital",
-      "iso2": "CG"
-    },
-    "COD": {
-      "name": "country.cod.name",
-      "capital": "country.cod.capital",
-      "iso2": "CD"
-    },
-    "CRI": {
-      "name": "country.cri.name",
-      "capital": "country.cri.capital",
-      "iso2": "CR"
-    },
-    "HRV": {
-      "name": "country.hrv.name",
-      "capital": "country.hrv.capital",
-      "iso2": "HR"
-    },
-    "CUB": {
-      "name": "country.cub.name",
-      "capital": "country.cub.capital",
-      "iso2": "CU"
-    },
-    "CYP": {
-      "name": "country.cyp.name",
-      "capital": "country.cyp.capital",
-      "iso2": "CY"
-    },
-    "CZE": {
-      "name": "country.cze.name",
-      "capital": "country.cze.capital",
-      "iso2": "CZ"
-    },
-    "DNK": {
-      "name": "country.dnk.name",
-      "capital": "country.dnk.capital",
-      "iso2": "DK"
-    },
-    "DJI": {
-      "name": "country.dji.name",
-      "capital": "country.dji.capital",
-      "iso2": "DJ"
-    },
-    "DMA": {
-      "name": "country.dma.name",
-      "capital": "country.dma.capital",
-      "iso2": "DM"
-    },
-    "DOM": {
-      "name": "country.dom.name",
-      "capital": "country.dom.capital",
-      "iso2": "DO"
-    },
-    "TLS": {
-      "name": "country.tls.name",
-      "capital": "country.tls.capital",
-      "iso2": "TL"
-    },
-    "ECU": {
-      "name": "country.ecu.name",
-      "capital": "country.ecu.capital",
-      "iso2": "EC"
-    },
-    "EGY": {
-      "name": "country.egy.name",
-      "capital": "country.egy.capital",
-      "iso2": "EG"
-    },
-    "SLV": {
-      "name": "country.slv.name",
-      "capital": "country.slv.capital",
-      "iso2": "SV"
-    },
-    "GNQ": {
-      "name": "country.gnq.name",
-      "capital": "country.gnq.capital",
-      "iso2": "GQ"
-    },
-    "ERI": {
-      "name": "country.eri.name",
-      "capital": "country.eri.capital",
-      "iso2": "ER"
-    },
-    "EST": {
-      "name": "country.est.name",
-      "capital": "country.est.capital",
-      "iso2": "EE"
-    },
-    "SWZ": {
-      "name": "country.swz.name",
-      "capital": "country.swz.capital",
-      "iso2": "SZ"
-    },
-    "ETH": {
-      "name": "country.eth.name",
-      "capital": "country.eth.capital",
-      "iso2": "ET"
-    },
-    "FJI": {
-      "name": "country.fji.name",
-      "capital": "country.fji.capital",
-      "iso2": "FJ"
-    },
-    "FIN": {
-      "name": "country.fin.name",
-      "capital": "country.fin.capital",
-      "iso2": "FI"
-    },
-    "FRA": {
-      "name": "country.fra.name",
-      "capital": "country.fra.capital",
-      "iso2": "FR"
-    },
-    "GAB": {
-      "name": "country.gab.name",
-      "capital": "country.gab.capital",
-      "iso2": "GA"
-    },
-    "GMB": {
-      "name": "country.gmb.name",
-      "capital": "country.gmb.capital",
-      "iso2": "GM"
-    },
-    "GEO": {
-      "name": "country.geo.name",
-      "capital": "country.geo.capital",
-      "iso2": "GE"
-    },
-    "DEU": {
-      "name": "country.deu.name",
-      "capital": "country.deu.capital",
-      "iso2": "DE"
-    },
-    "GHA": {
-      "name": "country.gha.name",
-      "capital": "country.gha.capital",
-      "iso2": "GH"
-    },
-    "GRC": {
-      "name": "country.grc.name",
-      "capital": "country.grc.capital",
-      "iso2": "GR"
-    },
-    "GRD": {
-      "name": "country.grd.name",
-      "capital": "country.grd.capital",
-      "iso2": "GD"
-    },
-    "GTM": {
-      "name": "country.gtm.name",
-      "capital": "country.gtm.capital",
-      "iso2": "GT"
-    },
-    "GIN": {
-      "name": "country.gin.name",
-      "capital": "country.gin.capital",
-      "iso2": "GN"
-    },
-    "GNB": {
-      "name": "country.gnb.name",
-      "capital": "country.gnb.capital",
-      "iso2": "GW"
-    },
-    "GUY": {
-      "name": "country.guy.name",
-      "capital": "country.guy.capital",
-      "iso2": "GY"
-    },
-    "HTI": {
-      "name": "country.hti.name",
-      "capital": "country.hti.capital",
-      "iso2": "HT"
-    },
-    "HND": {
-      "name": "country.hnd.name",
-      "capital": "country.hnd.capital",
-      "iso2": "HN"
-    },
-    "HUN": {
-      "name": "country.hun.name",
-      "capital": "country.hun.capital",
-      "iso2": "HU"
-    },
-    "ISL": {
-      "name": "country.isl.name",
-      "capital": "country.isl.capital",
-      "iso2": "IS"
-    },
-    "IND": {
-      "name": "country.ind.name",
-      "capital": "country.ind.capital",
-      "iso2": "IN"
-    },
-    "IDN": {
-      "name": "country.idn.name",
-      "capital": "country.idn.capital",
-      "iso2": "ID"
-    },
-    "IRN": {
-      "name": "country.irn.name",
-      "capital": "country.irn.capital",
-      "iso2": "IR"
-    },
-    "IRQ": {
-      "name": "country.irq.name",
-      "capital": "country.irq.capital",
-      "iso2": "IQ"
-    },
-    "IRL": {
-      "name": "country.irl.name",
-      "capital": "country.irl.capital",
-      "iso2": "IE"
-    },
-    "ISR": {
-      "name": "country.isr.name",
-      "capital": "country.isr.capital",
-      "iso2": "IL"
-    },
-    "ITA": {
-      "name": "country.ita.name",
-      "capital": "country.ita.capital",
-      "iso2": "IT"
+      "iso2": "TD",
+      "coordinates": [15.4542, 18.7322]
     },
     "CIV": {
       "name": "country.civ.name",
       "capital": "country.civ.capital",
-      "iso2": "CI"
+      "iso2": "CI",
+      "coordinates": [7.5400, -5.5471]
+    },    
+    "CHL": {
+      "name": "country.chl.name",
+      "capital": "country.chl.capital",
+      "iso2": "CL",
+      "coordinates": [-35.675147, -71.542969]
+    },
+    "CHN": {
+      "name": "country.chn.name",
+      "capital": "country.chn.capital",
+      "iso2": "CN",
+      "coordinates": [35.8617, 104.1954]
+    },
+    "COL": {
+      "name": "country.col.name",
+      "capital": "country.col.capital",
+      "iso2": "CO",
+      "coordinates": [4.5709, -74.2973]
+    },
+    "COM": {
+      "name": "country.com.name",
+      "capital": "country.com.capital",
+      "iso2": "KM",
+      "coordinates": [-11.6455, 43.3333]
+    },
+    "COG": {
+      "name": "country.cog.name",
+      "capital": "country.cog.capital",
+      "iso2": "CG",
+      "coordinates": [-0.228, 15.8277]
+    },
+    "COD": {
+      "name": "country.cod.name",
+      "capital": "country.cod.capital",
+      "iso2": "CD",
+      "coordinates": [-4.0383, 21.7587]
+    },
+    "CRI": {
+      "name": "country.cri.name",
+      "capital": "country.cri.capital",
+      "iso2": "CR",
+      "coordinates": [9.7489, -83.7534]
+    },
+    "HRV": {
+      "name": "country.hrv.name",
+      "capital": "country.hrv.capital",
+      "iso2": "HR",
+      "coordinates": [45.1, 15.2]
+    },
+    "CUB": {
+      "name": "country.cub.name",
+      "capital": "country.cub.capital",
+      "iso2": "CU",
+      "coordinates": [21.521757, -77.781167]
+    },
+    "CYP": {
+      "name": "country.cyp.name",
+      "capital": "country.cyp.capital",
+      "iso2": "CY",
+      "coordinates": [35.1264, 33.4299]
+    },
+    "CZE": {
+      "name": "country.cze.name",
+      "capital": "country.cze.capital",
+      "iso2": "CZ",
+      "coordinates": [49.8175, 15.473]
+    },
+    "DNK": {
+      "name": "country.dnk.name",
+      "capital": "country.dnk.capital",
+      "iso2": "DK",
+      "coordinates": [56.2639, 9.5018]
+    },
+    "DJI": {
+      "name": "country.dji.name",
+      "capital": "country.dji.capital",
+      "iso2": "DJ",
+      "coordinates": [11.8251, 42.5903]
+    },
+    "DMA": {
+      "name": "country.dma.name",
+      "capital": "country.dma.capital",
+      "iso2": "DM",
+      "coordinates": [15.414999, -61.370976]
+    },
+    "DOM": {
+      "name": "country.dom.name",
+      "capital": "country.dom.capital",
+      "iso2": "DO",
+      "coordinates": [18.7357, -70.1627]
+    },
+    "ECU": {
+      "name": "country.ecu.name",
+      "capital": "country.ecu.capital",
+      "iso2": "EC",
+      "coordinates": [-1.8312, -78.1834]
+    },
+    "EGY": {
+      "name": "country.egy.name",
+      "capital": "country.egy.capital",
+      "iso2": "EG",
+      "coordinates": [26.8206, 30.8025]
+    },
+    "SLV": {
+      "name": "country.slv.name",
+      "capital": "country.slv.capital",
+      "iso2": "SV",
+      "coordinates": [13.7942, -88.8965]
+    },
+    "GNQ": {
+      "name": "country.gnq.name",
+      "capital": "country.gnq.capital",
+      "iso2": "GQ",
+      "coordinates": [1.6508, 10.2679]
+    },
+    "ERI": {
+      "name": "country.eri.name",
+      "capital": "country.eri.capital",
+      "iso2": "ER",
+      "coordinates": [15.1794, 39.7823]
+    },
+    "EST": {
+      "name": "country.est.name",
+      "capital": "country.est.capital",
+      "iso2": "EE",
+      "coordinates": [58.5953, 25.0136]
+    },
+    "SWZ": {
+      "name": "country.swz.name",
+      "capital": "country.swz.capital",
+      "iso2": "SZ",
+      "coordinates": [-26.5225, 31.4659]
+    },
+    "ETH": {
+      "name": "country.eth.name",
+      "capital": "country.eth.capital",
+      "iso2": "ET",
+      "coordinates": [9.145, 40.4897]
+    },
+    "FJI": {
+      "name": "country.fji.name",
+      "capital": "country.fji.capital",
+      "iso2": "FJ",
+      "coordinates": [-17.7134, 178.065]
+    },
+    "FIN": {
+      "name": "country.fin.name",
+      "capital": "country.fin.capital",
+      "iso2": "FI",
+      "coordinates": [61.9241, 25.7482]
+    },
+    "FRA": {
+      "name": "country.fra.name",
+      "capital": "country.fra.capital",
+      "iso2": "FR",
+      "coordinates": [46.603354, 1.888334]
+    },
+    "GAB": {
+      "name": "country.gab.name",
+      "capital": "country.gab.capital",
+      "iso2": "GA",
+      "coordinates": [-0.8037, 11.6094]
+    },
+    "GMB": {
+      "name": "country.gmb.name",
+      "capital": "country.gmb.capital",
+      "iso2": "GM",
+      "coordinates": [13.4432, -15.3101]
+    },
+    "GEO": {
+      "name": "country.geo.name",
+      "capital": "country.geo.capital",
+      "iso2": "GE",
+      "coordinates": [42.3154, 43.3569]
+    },
+    "DEU": {
+      "name": "country.deu.name",
+      "capital": "country.deu.capital",
+      "iso2": "DE",
+      "coordinates": [51.1657, 10.4515]
+    },
+    "GHA": {
+      "name": "country.gha.name",
+      "capital": "country.gha.capital",
+      "iso2": "GH",
+      "coordinates": [7.9465, -1.0232]
+    },
+    "GRC": {
+      "name": "country.grc.name",
+      "capital": "country.grc.capital",
+      "iso2": "GR",
+      "coordinates": [39.0742, 21.8243]
+    },
+    "GRD": {
+      "name": "country.grd.name",
+      "capital": "country.grd.capital",
+      "iso2": "GD",
+      "coordinates": [12.1165, -61.678999]
+    },
+    "GTM": {
+      "name": "country.gtm.name",
+      "capital": "country.gtm.capital",
+      "iso2": "GT",
+      "coordinates": [15.7835, -90.2308]
+    },
+    "GIN": {
+      "name": "country.gin.name",
+      "capital": "country.gin.capital",
+      "iso2": "GN",
+      "coordinates": [9.9456, -9.6966]
+    },
+    "GNB": {
+      "name": "country.gnb.name",
+      "capital": "country.gnb.capital",
+      "iso2": "GW",
+      "coordinates": [11.8037, -15.1804]
+    },
+    "GUY": {
+      "name": "country.guy.name",
+      "capital": "country.guy.capital",
+      "iso2": "GY",
+      "coordinates": [4.860416, -58.93018]
+    },
+    "HTI": {
+      "name": "country.hti.name",
+      "capital": "country.hti.capital",
+      "iso2": "HT",
+      "coordinates": [18.9712, -72.2852]
+    },
+    "HND": {
+      "name": "country.hnd.name",
+      "capital": "country.hnd.capital",
+      "iso2": "HN",
+      "coordinates": [15.199999, -86.241905]
+    },
+    "HUN": {
+      "name": "country.hun.name",
+      "capital": "country.hun.capital",
+      "iso2": "HU",
+      "coordinates": [47.1625, 19.5033]
+    },
+    "ISL": {
+      "name": "country.isl.name",
+      "capital": "country.isl.capital",
+      "iso2": "IS",
+      "coordinates": [64.9631, -19.0208]
+    },
+    "IND": {
+      "name": "country.ind.name",
+      "capital": "country.ind.capital",
+      "iso2": "IN",
+      "coordinates": [20.5937, 78.9629]
+    },
+    "IDN": {
+      "name": "country.idn.name",
+      "capital": "country.idn.capital",
+      "iso2": "ID",
+      "coordinates": [-0.7893, 113.9213]
+    },
+    "IRN": {
+      "name": "country.irn.name",
+      "capital": "country.irn.capital",
+      "iso2": "IR",
+      "coordinates": [32.4279, 53.688]
+    },
+    "IRQ": {
+      "name": "country.irq.name",
+      "capital": "country.irq.capital",
+      "iso2": "IQ",
+      "coordinates": [33.2232, 43.6793]
+    },
+    "IRL": {
+      "name": "country.irl.name",
+      "capital": "country.irl.capital",
+      "iso2": "IE",
+      "coordinates": [53.4129, -8.2439]
+    },
+    "ISR": {
+      "name": "country.isr.name",
+      "capital": "country.isr.capital",
+      "iso2": "IL",
+      "coordinates": [31.0461, 34.8516]
+    },
+    "ITA": {
+      "name": "country.ita.name",
+      "capital": "country.ita.capital",
+      "iso2": "IT",
+      "coordinates": [41.8719, 12.5674]
     },
     "JAM": {
       "name": "country.jam.name",
       "capital": "country.jam.capital",
-      "iso2": "JM"
+      "iso2": "JM",
+      "coordinates": [18.1096, -77.2975]
     },
     "JPN": {
       "name": "country.jpn.name",
       "capital": "country.jpn.capital",
-      "iso2": "JP"
+      "iso2": "JP",
+      "coordinates": [36.2048, 138.2529]
     },
     "JOR": {
       "name": "country.jor.name",
       "capital": "country.jor.capital",
-      "iso2": "JO"
+      "iso2": "JO",
+      "coordinates": [30.5852, 36.2384]
     },
     "KAZ": {
       "name": "country.kaz.name",
       "capital": "country.kaz.capital",
-      "iso2": "KZ"
+      "iso2": "KZ",
+      "coordinates": [48.0196, 66.9237]
     },
     "KEN": {
       "name": "country.ken.name",
       "capital": "country.ken.capital",
-      "iso2": "KE"
+      "iso2": "KE",
+      "coordinates": [-0.0236, 37.9062]
     },
     "KIR": {
       "name": "country.kir.name",
       "capital": "country.kir.capital",
-      "iso2": "KI"
-    },
-    "PRK": {
-      "name": "country.prk.name",
-      "capital": "country.prk.capital",
-      "iso2": "KP"
-    },
-    "KOR": {
-      "name": "country.kor.name",
-      "capital": "country.kor.capital",
-      "iso2": "KR"
+      "iso2": "KI",
+      "coordinates": [1.8708, -157.362]
     },
     "KWT": {
       "name": "country.kwt.name",
       "capital": "country.kwt.capital",
-      "iso2": "KW"
+      "iso2": "KW",
+      "coordinates": [29.3759, 47.9774]
     },
     "KGZ": {
       "name": "country.kgz.name",
       "capital": "country.kgz.capital",
-      "iso2": "KG"
+      "iso2": "KG",
+      "coordinates": [41.2044, 74.7661]
     },
     "LAO": {
       "name": "country.lao.name",
       "capital": "country.lao.capital",
-      "iso2": "LA"
+      "iso2": "LA",
+      "coordinates": [19.8563, 102.4955]
     },
     "LVA": {
       "name": "country.lva.name",
       "capital": "country.lva.capital",
-      "iso2": "LV"
+      "iso2": "LV",
+      "coordinates": [56.8796, 24.6032]
     },
     "LBN": {
       "name": "country.lbn.name",
       "capital": "country.lbn.capital",
-      "iso2": "LB"
+      "iso2": "LB",
+      "coordinates": [33.8547, 35.8623]
     },
     "LSO": {
       "name": "country.lso.name",
       "capital": "country.lso.capital",
-      "iso2": "LS"
+      "iso2": "LS",
+      "coordinates": [-29.609988, 28.233608]
     },
     "LBR": {
       "name": "country.lbr.name",
       "capital": "country.lbr.capital",
-      "iso2": "LR"
+      "iso2": "LR",
+      "coordinates": [6.428055, -9.429499]
     },
     "LBY": {
       "name": "country.lby.name",
       "capital": "country.lby.capital",
-      "iso2": "LY"
+      "iso2": "LY",
+      "coordinates": [26.3351, 17.228331]
     },
     "LIE": {
       "name": "country.lie.name",
       "capital": "country.lie.capital",
-      "iso2": "LI"
+      "iso2": "LI",
+      "coordinates": [47.166, 9.5554]
     },
     "LTU": {
       "name": "country.ltu.name",
       "capital": "country.ltu.capital",
-      "iso2": "LT"
+      "iso2": "LT",
+      "coordinates": [55.1694, 23.8813]
     },
     "LUX": {
       "name": "country.lux.name",
       "capital": "country.lux.capital",
-      "iso2": "LU"
+      "iso2": "LU",
+      "coordinates": [49.8153, 6.1296]
+    },
+    "MKD": {
+      "name": "country.mkd.name",
+      "capital": "country.mkd.capital",
+      "iso2": "MK",
+      "coordinates": [41.6086, 21.7453]
     },
     "MDG": {
       "name": "country.mdg.name",
       "capital": "country.mdg.capital",
-      "iso2": "MG"
+      "iso2": "MG",
+      "coordinates": [-18.766947, 46.869107]
     },
     "MWI": {
       "name": "country.mwi.name",
       "capital": "country.mwi.capital",
-      "iso2": "MW"
+      "iso2": "MW",
+      "coordinates": [-13.254307, 34.301525]
     },
     "MYS": {
       "name": "country.mys.name",
       "capital": "country.mys.capital",
-      "iso2": "MY"
+      "iso2": "MY",
+      "coordinates": [4.2105, 101.9758]
     },
     "MDV": {
       "name": "country.mdv.name",
       "capital": "country.mdv.capital",
-      "iso2": "MV"
+      "iso2": "MV",
+      "coordinates": [3.2028, 73.2207]
     },
     "MLI": {
       "name": "country.mli.name",
       "capital": "country.mli.capital",
-      "iso2": "ML"
+      "iso2": "ML",
+      "coordinates": [17.570692, -3.996166]
     },
     "MLT": {
       "name": "country.mlt.name",
       "capital": "country.mlt.capital",
-      "iso2": "MT"
+      "iso2": "MT",
+      "coordinates": [35.9375, 14.3754]
     },
     "MHL": {
       "name": "country.mhl.name",
       "capital": "country.mhl.capital",
-      "iso2": "MH"
+      "iso2": "MH",
+      "coordinates": [7.1315, 171.1845]
     },
     "MRT": {
       "name": "country.mrt.name",
       "capital": "country.mrt.capital",
-      "iso2": "MR"
+      "iso2": "MR",
+      "coordinates": [21.0079, -10.9408]
     },
     "MUS": {
       "name": "country.mus.name",
       "capital": "country.mus.capital",
-      "iso2": "MU"
+      "iso2": "MU",
+      "coordinates": [-20.348404, 57.552152]
     },
     "MEX": {
       "name": "country.mex.name",
       "capital": "country.mex.capital",
-      "iso2": "MX"
+      "iso2": "MX",
+      "coordinates": [23.6345, -102.5528]
     },
     "FSM": {
       "name": "country.fsm.name",
       "capital": "country.fsm.capital",
-      "iso2": "FM"
+      "iso2": "FM",
+      "coordinates": [7.4256, 150.5508]
     },
     "MDA": {
       "name": "country.mda.name",
       "capital": "country.mda.capital",
-      "iso2": "MD"
+      "iso2": "MD",
+      "coordinates": [47.4116, 28.3699]
     },
     "MCO": {
       "name": "country.mco.name",
       "capital": "country.mco.capital",
-      "iso2": "MC"
+      "iso2": "MC",
+      "coordinates": [43.7384, 7.4246]
     },
     "MNG": {
       "name": "country.mng.name",
       "capital": "country.mng.capital",
-      "iso2": "MN"
+      "iso2": "MN",
+      "coordinates": [46.8625, 103.8467]
     },
     "MNE": {
       "name": "country.mne.name",
       "capital": "country.mne.capital",
-      "iso2": "ME"
+      "iso2": "ME",
+      "coordinates": [42.708678, 19.37439]
     },
     "MAR": {
       "name": "country.mar.name",
       "capital": "country.mar.capital",
-      "iso2": "MA"
+      "iso2": "MA",
+      "coordinates": [31.7917, -7.0926]
     },
     "MOZ": {
       "name": "country.moz.name",
       "capital": "country.moz.capital",
-      "iso2": "MZ"
+      "iso2": "MZ",
+      "coordinates": [-18.665695, 35.529562]
     },
     "MMR": {
       "name": "country.mmr.name",
       "capital": "country.mmr.capital",
-      "iso2": "MM"
+      "iso2": "MM",
+      "coordinates": [21.9162, 95.956]
     },
     "NAM": {
       "name": "country.nam.name",
       "capital": "country.nam.capital",
-      "iso2": "NA"
+      "iso2": "NA",
+      "coordinates": [-22.9576, 18.4904]
     },
     "NRU": {
       "name": "country.nru.name",
       "capital": "country.nru.capital",
-      "iso2": "NR"
+      "iso2": "NR",
+      "coordinates": [-0.5228, 166.9315]
     },
     "NPL": {
       "name": "country.npl.name",
       "capital": "country.npl.capital",
-      "iso2": "NP"
+      "iso2": "NP",
+      "coordinates": [28.3949, 84.124]
     },
     "NLD": {
       "name": "country.nld.name",
       "capital": "country.nld.capital",
-      "iso2": "NL"
+      "iso2": "NL",
+      "coordinates": [52.1326, 5.2913]
     },
     "NZL": {
       "name": "country.nzl.name",
       "capital": "country.nzl.capital",
-      "iso2": "NZ"
+      "iso2": "NZ",
+      "coordinates": [-40.9006, 174.886]
     },
     "NIC": {
       "name": "country.nic.name",
       "capital": "country.nic.capital",
-      "iso2": "NI"
+      "iso2": "NI",
+      "coordinates": [12.8654, -85.2072]
     },
     "NER": {
       "name": "country.ner.name",
       "capital": "country.ner.capital",
-      "iso2": "NE"
+      "iso2": "NE",
+      "coordinates": [17.607789, 8.081666]
     },
     "NGA": {
       "name": "country.nga.name",
       "capital": "country.nga.capital",
-      "iso2": "NG"
+      "iso2": "NG",
+      "coordinates": [9.082, 8.6753]
+    },
+    "PRK": {
+      "name": "country.prk.name",
+      "capital": "country.prk.capital",
+      "iso2": "KP",
+      "coordinates": [40.3399, 127.5101]
     },
     "NOR": {
       "name": "country.nor.name",
       "capital": "country.nor.capital",
-      "iso2": "NO"
+      "iso2": "NO",
+      "coordinates": [60.472, 8.4689]
     },
     "OMN": {
       "name": "country.omn.name",
       "capital": "country.omn.capital",
-      "iso2": "OM"
+      "iso2": "OM",
+      "coordinates": [21.512583, 55.923255]
     },
     "PAK": {
       "name": "country.pak.name",
       "capital": "country.pak.capital",
-      "iso2": "PK"
+      "iso2": "PK",
+      "coordinates": [30.3753, 69.3451]
     },
     "PLW": {
       "name": "country.plw.name",
       "capital": "country.plw.capital",
-      "iso2": "PW"
+      "iso2": "PW",
+      "coordinates": [7.515, 134.5825]
     },
     "PAN": {
       "name": "country.pan.name",
       "capital": "country.pan.capital",
-      "iso2": "PA"
+      "iso2": "PA",
+      "coordinates": [8.538, -80.7821]
     },
     "PNG": {
       "name": "country.png.name",
       "capital": "country.png.capital",
-      "iso2": "PG"
+      "iso2": "PG",
+      "coordinates": [-6.314993, 143.95555]
     },
     "PRY": {
       "name": "country.pry.name",
       "capital": "country.pry.capital",
-      "iso2": "PY"
+      "iso2": "PY",
+      "coordinates": [-23.4425, -58.4438]
     },
     "PER": {
       "name": "country.per.name",
       "capital": "country.per.capital",
-      "iso2": "PE"
+      "iso2": "PE",
+      "coordinates": [-9.19, -75.0152]
     },
     "PHL": {
       "name": "country.phl.name",
       "capital": "country.phl.capital",
-      "iso2": "PH"
+      "iso2": "PH",
+      "coordinates": [12.8797, 121.774]
     },
     "POL": {
       "name": "country.pol.name",
       "capital": "country.pol.capital",
-      "iso2": "PL"
+      "iso2": "PL",
+      "coordinates": [51.9194, 19.1451]
     },
     "PRT": {
       "name": "country.prt.name",
       "capital": "country.prt.capital",
-      "iso2": "PT"
+      "iso2": "PT",
+      "coordinates": [39.3999, -8.2245]
     },
     "QAT": {
       "name": "country.qat.name",
       "capital": "country.qat.capital",
-      "iso2": "QA"
+      "iso2": "QA",
+      "coordinates": [25.3548, 51.1839]
+    },
+    "KOR": {
+      "name": "country.kor.name",
+      "capital": "country.kor.capital",
+      "iso2": "KR",
+      "coordinates": [35.9078, 127.7669]
     },
     "ROU": {
       "name": "country.rou.name",
       "capital": "country.rou.capital",
-      "iso2": "RO"
+      "iso2": "RO",
+      "coordinates": [45.9432, 24.9668]
     },
     "RUS": {
       "name": "country.rus.name",
       "capital": "country.rus.capital",
-      "iso2": "RU"
+      "iso2": "RU",
+      "coordinates": [57.0407, 44.1210]
     },
     "RWA": {
       "name": "country.rwa.name",
       "capital": "country.rwa.capital",
-      "iso2": "RW"
+      "iso2": "RW",
+      "coordinates": [-1.9403, 29.8739]
     },
     "KNA": {
       "name": "country.kna.name",
       "capital": "country.kna.capital",
-      "iso2": "KN"
+      "iso2": "KN",
+      "coordinates": [17.357822, -62.782998]
     },
     "LCA": {
       "name": "country.lca.name",
       "capital": "country.lca.capital",
-      "iso2": "LC"
+      "iso2": "LC",
+      "coordinates": [13.9094, -60.9789]
     },
     "VCT": {
       "name": "country.vct.name",
       "capital": "country.vct.capital",
-      "iso2": "VC"
+      "iso2": "VC",
+      "coordinates": [12.9843, -61.2872]
     },
     "WSM": {
       "name": "country.wsm.name",
       "capital": "country.wsm.capital",
-      "iso2": "WS"
+      "iso2": "WS",
+      "coordinates": [-13.759, -172.1046]
     },
     "SMR": {
       "name": "country.smr.name",
       "capital": "country.smr.capital",
-      "iso2": "SM"
+      "iso2": "SM",
+      "coordinates": [43.9424, 12.4578]
     },
     "STP": {
       "name": "country.stp.name",
       "capital": "country.stp.capital",
-      "iso2": "ST"
+      "iso2": "ST",
+      "coordinates": [0.1864, 6.6131]
     },
     "SAU": {
       "name": "country.sau.name",
       "capital": "country.sau.capital",
-      "iso2": "SA"
+      "iso2": "SA",
+      "coordinates": [23.885942, 45.079162]
     },
     "SEN": {
       "name": "country.sen.name",
       "capital": "country.sen.capital",
-      "iso2": "SN"
+      "iso2": "SN",
+      "coordinates": [14.4974, -14.4524]
     },
     "SRB": {
       "name": "country.srb.name",
       "capital": "country.srb.capital",
-      "iso2": "RS"
+      "iso2": "RS",
+      "coordinates": [44.0165, 21.0059]
     },
     "SYC": {
       "name": "country.syc.name",
       "capital": "country.syc.capital",
-      "iso2": "SC"
+      "iso2": "SC",
+      "coordinates": [-4.6796, 55.4919]
     },
     "SLE": {
       "name": "country.sle.name",
       "capital": "country.sle.capital",
-      "iso2": "SL"
+      "iso2": "SL",
+      "coordinates": [8.460555, -11.779889]
     },
     "SGP": {
       "name": "country.sgp.name",
       "capital": "country.sgp.capital",
-      "iso2": "SG"
+      "iso2": "SG",
+      "coordinates": [1.3521, 103.8198]
     },
     "SVK": {
       "name": "country.svk.name",
       "capital": "country.svk.capital",
-      "iso2": "SK"
+      "iso2": "SK",
+      "coordinates": [48.669, 19.699]
     },
     "SVN": {
       "name": "country.svn.name",
       "capital": "country.svn.capital",
-      "iso2": "SI"
+      "iso2": "SI",
+      "coordinates": [46.1512, 14.9955]
     },
     "SLB": {
       "name": "country.slb.name",
       "capital": "country.slb.capital",
-      "iso2": "SB"
+      "iso2": "SB",
+      "coordinates": [-9.6457, 160.1562]
     },
     "SOM": {
       "name": "country.som.name",
       "capital": "country.som.capital",
-      "iso2": "SO"
+      "iso2": "SO",
+      "coordinates": [5.1521, 46.1996]
     },
     "ZAF": {
       "name": "country.zaf.name",
       "capital": "country.zaf.capital",
-      "iso2": "ZA"
+      "iso2": "ZA",
+      "coordinates": [-30.5595, 22.9375]
     },
     "SSD": {
       "name": "country.ssd.name",
       "capital": "country.ssd.capital",
-      "iso2": "SS"
+      "iso2": "SS",
+      "coordinates": [6.8769, 31.306]
     },
     "ESP": {
       "name": "country.esp.name",
       "capital": "country.esp.capital",
-      "iso2": "ES"
+      "iso2": "ES",
+      "coordinates": [40.4637, -3.7492]
     },
     "LKA": {
       "name": "country.lka.name",
       "capital": "country.lka.capital",
-      "iso2": "LK"
+      "iso2": "LK",
+      "coordinates": [7.873054, 80.771797]
     },
     "SDN": {
       "name": "country.sdn.name",
       "capital": "country.sdn.capital",
-      "iso2": "SD"
+      "iso2": "SD",
+      "coordinates": [12.8628, 30.2176]
     },
     "SUR": {
       "name": "country.sur.name",
       "capital": "country.sur.capital",
-      "iso2": "SR"
+      "iso2": "SR",
+      "coordinates": [3.9193, -56.0278]
     },
     "SWE": {
       "name": "country.swe.name",
       "capital": "country.swe.capital",
-      "iso2": "SE"
+      "iso2": "SE",
+      "coordinates": [60.1282, 18.6435]
     },
     "CHE": {
       "name": "country.che.name",
       "capital": "country.che.capital",
-      "iso2": "CH"
+      "iso2": "CH",
+      "coordinates": [46.8182, 8.2275]
     },
     "SYR": {
       "name": "country.syr.name",
       "capital": "country.syr.capital",
-      "iso2": "SY"
+      "iso2": "SY",
+      "coordinates": [34.8021, 38.9968]
     },
     "TWN": {
       "name": "country.twn.name",
       "capital": "country.twn.capital",
-      "iso2": "TW"
+      "iso2": "TW",
+      "coordinates": [23.6978, 120.9605]
     },
     "TJK": {
       "name": "country.tjk.name",
       "capital": "country.tjk.capital",
-      "iso2": "TJ"
+      "iso2": "TJ",
+      "coordinates": [38.861, 71.2761]
     },
     "TZA": {
       "name": "country.tza.name",
       "capital": "country.tza.capital",
-      "iso2": "TZ"
+      "iso2": "TZ",
+      "coordinates": [-6.369028, 34.888822]
     },
     "THA": {
       "name": "country.tha.name",
       "capital": "country.tha.capital",
-      "iso2": "TH"
+      "iso2": "TH",
+      "coordinates": [15.87, 100.9925]
+    },
+    "TLS": {
+      "name": "country.tls.name",
+      "capital": "country.tls.capital",
+      "iso2": "TL",
+      "coordinates": [-8.874217, 125.727539]
     },
     "TGO": {
       "name": "country.tgo.name",
       "capital": "country.tgo.capital",
-      "iso2": "TG"
+      "iso2": "TG",
+      "coordinates": [8.6195, 0.8248]
     },
     "TON": {
       "name": "country.ton.name",
       "capital": "country.ton.capital",
-      "iso2": "TO"
+      "iso2": "TO",
+      "coordinates": [-21.1784, -175.1982]
     },
     "TTO": {
       "name": "country.tto.name",
       "capital": "country.tto.capital",
-      "iso2": "TT"
+      "iso2": "TT",
+      "coordinates": [10.6918, -61.2225]
     },
     "TUN": {
       "name": "country.tun.name",
       "capital": "country.tun.capital",
-      "iso2": "TN"
+      "iso2": "TN",
+      "coordinates": [33.8869, 9.5375]
     },
     "TUR": {
       "name": "country.tur.name",
       "capital": "country.tur.capital",
-      "iso2": "TR"
+      "iso2": "TR",
+      "coordinates": [38.9637, 35.2433]
     },
     "TKM": {
       "name": "country.tkm.name",
       "capital": "country.tkm.capital",
-      "iso2": "TM"
+      "iso2": "TM",
+      "coordinates": [38.9697, 59.5563]
     },
     "TUV": {
       "name": "country.tuv.name",
       "capital": "country.tuv.capital",
-      "iso2": "TV"
+      "iso2": "TV",
+      "coordinates": [-7.1095, 177.6493]
     },
     "UGA": {
       "name": "country.uga.name",
       "capital": "country.uga.capital",
-      "iso2": "UG"
+      "iso2": "UG",
+      "coordinates": [1.373333, 32.290275]
     },
     "UKR": {
       "name": "country.ukr.name",
       "capital": "country.ukr.capital",
-      "iso2": "UA"
+      "iso2": "UA",
+      "coordinates": [48.3794, 31.1656]
     },
     "ARE": {
       "name": "country.are.name",
       "capital": "country.are.capital",
-      "iso2": "AE"
+      "iso2": "AE",
+      "coordinates": [23.424076, 53.847818]
     },
     "GBR": {
       "name": "country.gbr.name",
       "capital": "country.gbr.capital",
-      "iso2": "GB"
+      "iso2": "GB",
+      "coordinates": [55.3781, -3.436]
     },
     "USA": {
       "name": "country.usa.name",
       "capital": "country.usa.capital",
-      "iso2": "US"
+      "iso2": "US",
+      "coordinates": [37.0902, -95.7129]
     },
     "URY": {
       "name": "country.ury.name",
       "capital": "country.ury.capital",
-      "iso2": "UY"
+      "iso2": "UY",
+      "coordinates": [-32.5228, -55.7658]
     },
     "UZB": {
       "name": "country.uzb.name",
       "capital": "country.uzb.capital",
-      "iso2": "UZ"
+      "iso2": "UZ",
+      "coordinates": [41.3775, 64.5853]
     },
     "VUT": {
       "name": "country.vut.name",
       "capital": "country.vut.capital",
-      "iso2": "VU"
+      "iso2": "VU",
+      "coordinates": [-15.3767, 166.9592]
     },
     "VEN": {
       "name": "country.ven.name",
       "capital": "country.ven.capital",
-      "iso2": "VE"
+      "iso2": "VE",
+      "coordinates": [6.4238, -66.5897]
     },
     "VNM": {
       "name": "country.vnm.name",
       "capital": "country.vnm.capital",
-      "iso2": "VN"
+      "iso2": "VN",
+      "coordinates": [14.0583, 108.2772]
     },
     "YEM": {
       "name": "country.yem.name",
       "capital": "country.yem.capital",
-      "iso2": "YE"
+      "iso2": "YE",
+      "coordinates": [15.552727, 48.516388]
     },
     "ZMB": {
       "name": "country.zmb.name",
       "capital": "country.zmb.capital",
-      "iso2": "ZM"
+      "iso2": "ZM",
+      "coordinates": [-13.133897, 27.849332]
     },
     "ZWE": {
       "name": "country.zwe.name",
       "capital": "country.zwe.capital",
-      "iso2": "ZW"
+      "iso2": "ZW",
+      "coordinates": [-19.015438, 29.154857]
     }
   }
 }
