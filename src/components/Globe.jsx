@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 import globeData from '../assets/globe-data.json';
 import countries from '../assets/countries.json';
 
-const Globe = ({ theme }) => {
+const Globe = ({ theme, onCountrySelect}) => {
   const containerRef = React.useRef(null);
   const { t, i18n } = useTranslation();
 
@@ -22,28 +22,24 @@ const Globe = ({ theme }) => {
     container.innerHTML = '';
 
     let savedTheme = localStorage.getItem('theme');
-    let globeEmissionLevel, atmosphereLevel;
-    let bgColor, globeColor, atmosphereColor, polygonColor, globeEmissionColor, ambientLightColor, emissionLightColor;
+    let atmosphereLevel;
+    let bgColor, globeColor, atmosphereColor, polygonColor, ambientLightColor, emissionLightColor;
 
     if (savedTheme === 'dark') {
       bgColor = '#1A1A1A';
       globeColor = '#222222';
       atmosphereColor = '#2B2B2B';
       polygonColor = 'rgba(173, 181, 189,0.8)';
-      globeEmissionColor = '#1A1A1A';
       ambientLightColor = '#1A1A1A';
       emissionLightColor = '#FFFFFF';
-      globeEmissionLevel = 0.1;
       atmosphereLevel = 0.04;
     } else {
       bgColor = '#FFFFFF';
       globeColor = '#ffffff';
       atmosphereColor = '#ffffff';
       polygonColor = 'rgba(255,255,255, 0.4)';
-      globeEmissionColor = '#ffffff';
       ambientLightColor = '#ffffff';
       emissionLightColor = '#8566cc';
-      globeEmissionLevel = 1;
       atmosphereLevel = 0.4;
     }
     
@@ -64,7 +60,7 @@ const Globe = ({ theme }) => {
     globe = new ThreeGlobe({ waitForGlobeReady: true, animateIn: true })
       .hexPolygonsData(globeData.features)
       .hexPolygonResolution(4)
-      .hexPolygonMargin(0.58)
+      .hexPolygonMargin(0.55)
       .hexPolygonUseDots(true)
       .showAtmosphere(true)
       .atmosphereColor(atmosphereColor)
@@ -84,25 +80,20 @@ const Globe = ({ theme }) => {
     .htmlLng(([, d]) => parseFloat(d.coordinates[1]))
     .htmlAltitude(0.02)
     .htmlElement(([iso3, d]) => {
-        const el = document.createElement('a');
-        const [lat, lng] = d.coordinates;
-
-        el.innerHTML = t(d.name);
-        el.classList.add('country-button');
-        el.dataset.iso3 = iso3.toLowerCase();
-
-        el.addEventListener('click', (event) => {
-            event.preventDefault();
-            const cityName = iso3.toLowerCase();
-        });
-
-        return el;
+      const el = document.createElement('a');
+      el.innerHTML = t(d.name);
+      el.classList.add('country-button');
+      el.dataset.iso3 = iso3.toLowerCase();
+      el.addEventListener('click', (event) => {
+        event.preventDefault();
+        const iso3 = el.dataset.iso3;
+        onCountrySelect(iso3);
+      });
+      return el;
     });
 
     const globeMaterial = new MeshBasicMaterial({
-      color: new Color(globeColor),
-      emissive: new Color(globeEmissionColor),
-      emissiveIntensity: globeEmissionLevel
+      color: new Color(globeColor)
     });
     globe.position.y = 0;
     globe.globeMaterial(globeMaterial);
@@ -127,12 +118,12 @@ const Globe = ({ theme }) => {
     controls.enableDamping = true;
     controls.dynamicDampingFactor = 0.01;
     controls.enablePan = false;
-    controls.minDistance = 180;
-    controls.maxDistance = 240;
+    controls.minDistance = 150;
+    controls.maxDistance = 300;
     controls.rotateSpeed = 0.4;
     controls.zoomSpeed = 1;
     controls.autoRotate = true;
-    controls.autoRotateSpeed = -0.1;
+    controls.autoRotateSpeed = -0.05;
     globe.setPointOfView(camera.position, globe.position);
     controls.addEventListener('change', () => globe.setPointOfView(camera.position, globe.position));
 
@@ -171,7 +162,7 @@ const Globe = ({ theme }) => {
     mouseY = event.clientY - windowHalfY;
   };
 
-  return <div ref={containerRef} id="globe-visualizer"></div>;
+  return <div ref={containerRef} id='globe-visualizer'></div>;
 };
 
 export default Globe;

@@ -20,7 +20,6 @@ const TranslateDropdown = forwardRef(({ setOpenTranslateDropdown }, ref) => {
   };
 
   const handleLanguageChange = (languageCode) => {
-    console.log(languageCode);
     i18n.changeLanguage(languageCode);
     setActiveLanguage(languageCode);
   };

@@ -8,11 +8,16 @@ import Globe from './components/Globe';
 function App() {
   const { t } = useTranslation();
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+  const [selectedCountry, setSelectedCountry] = useState(null);
 
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     localStorage.setItem('theme', newTheme);
     setTheme(newTheme);
+  };
+
+  const handleCountrySelect = (iso3) => {
+    setSelectedCountry(iso3);
   };
 
   return (
@@ -24,9 +29,9 @@ function App() {
         </Helmet>
       </HelmetProvider>
       <div className="container">
-        <Globe theme={theme} toggleTheme={toggleTheme} />
+        <Globe theme={theme} toggleTheme={toggleTheme} onCountrySelect={handleCountrySelect} />
       </div>
-      <Navbar toggleTheme={toggleTheme} theme={theme} />
+      <Navbar toggleTheme={toggleTheme} theme={theme} selectedCountry={selectedCountry} />
     </>
   );
 }
