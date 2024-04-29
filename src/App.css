@@ -40,7 +40,7 @@
 }
 
 /* Navbar */
-nav .logo, nav .react-dropdown-select-clear, nav .react-dropdown-select .no-data {
+nav {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -105,7 +105,8 @@ nav .react-dropdown-select:hover {
 
 nav .react-dropdown-select:focus, nav .react-dropdown-select:focus-within {
   border-color: var(--border-color) !important;
-  background-color: var(--input-hover-bg) !important;;
+  background-color: var(--input-hover-bg) !important;
+  border-color: var(--outline-color) !important;
 }
 
 nav .react-dropdown-select-content {
@@ -148,23 +149,32 @@ nav .react-dropdown-select-dropdown {
 nav .react-dropdown-select-item {
   padding: 0.25rem 0.5rem;
   transition: background-color 0.2s ease-in-out;
-  border-bottom: var(--border-width) solid var(--border-color);
+  border-bottom: var(--border-width) solid var(--border-color) !important;
   font-size: 0.75rem;
   font-weight: 500;
   color: var(--text-color);
   font-family: 'Manrope', sans-serif;
+  min-height: 2rem;
+  display: flex;
+  align-items: center;  
+}
+
+nav .react-dropdown-select-item-active {
+  background-color: var(--input-hover-bg) !important;
+  background: var(--input-hover-bg) !important;
 }
 
 nav .react-dropdown-select-item:last-child {
   border-bottom: none !important;
 }
 
-nav .react-dropdown-select-item:hover, nav .react-dropdown-select-item:focus, nav .react-dropdown-select-item:focus-within {
-  background-color: var(--input-hover-bg);
+nav .react-dropdown-select-item:hover, nav .react-dropdown-select-item:focus, nav .react-dropdown-select-item:focus-within, .translate-dropdown-item.selected {
+  background-color: var(--input-hover-bg) !important;
+  background: var(--input-hover-bg) !important;
 }
 
 nav .react-dropdown-select-item-selected, .translate-dropdown-item.active {
-  background-color: var(--input-hover-bg) !important;
+  background-color: var(--input-selected-bg) !important;
   border-color: var(--border-color) !important;
   color: var(--text-color) !important;
 }
@@ -219,11 +229,11 @@ nav .react-dropdown-select .no-data {
   font-family: 'Manrope', sans-serif;
 }
 
-nav div.button {
+nav button.translate {
   position: relative;
 }
 
-nav > button, nav div.button {
+nav > button, nav button.translate {
   height: 2rem;
   width: 2rem;
   background-color: var(--container-bg);
@@ -237,14 +247,20 @@ nav > button, nav div.button {
   transition: background-color 0.2s ease-in-out;
 }
 
-nav > button svg, nav div.button svg{
+nav > button svg, nav button.translate svg{
   height: 1rem;
   width: 1rem;
   fill: var(--icon-color);
 }
 
-nav > button:hover,  nav div.button:hover {
+nav > button:hover,  nav button.translate:hover {
   background-color: var(--input-hover-bg);
+}
+
+nav > button:focus, nav > button:focus-visible, nav button.translate:focus, nav button.translate:focus-visible {
+  background-color: var(--input-hover-bg);
+  border-color: var(--outline-color);
+  outline: none;
 }
 
 .translate-dropdown {
@@ -290,10 +306,6 @@ nav > button:hover,  nav div.button:hover {
   border-bottom: none;
   border-bottom-left-radius: 0.2rem;
   border-bottom-right-radius: 0.2rem;
-}
-
-.translate-dropdown-item:hover, .translate-dropdown-item:focus, .translate-dropdown-item:focus-within {
-  background-color: var(--input-hover-bg);
 }
 
 @media screen and (max-width: 1440px) {

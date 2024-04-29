@@ -19,6 +19,7 @@ const Navbar = ({ toggleTheme, theme, selectedCountry }) => {
   const [allOptionsData, setAllOptions] = useState([]);
   const [selectKey, setSelectKey] = useState(0);
   const [selectedValue, setSelectedValue] = useState(undefined);
+  const [selectFlag, setSelectFlag] = useState(false);
 
   useEffect(() => {
     const countriesData = Object.entries(countriesDataJSON.countriesCollection).map(([iso3, countryData]) => ({
@@ -76,7 +77,32 @@ const Navbar = ({ toggleTheme, theme, selectedCountry }) => {
 
   const handleChange = (selectedOptions) => {
     setSelectedValue(selectedOptions);
+    setSelectFlag(true);
+    setTimeout(() => {
+      setSelectFlag(false);
+    }, 100);
   };
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === 'Enter') {
+        const input = document.querySelector('.react-dropdown-select-input');
+        const select = document.querySelector('.react-dropdown-select');
+        const navButtons = document.querySelectorAll('nav button');
+        console.log(selectFlag);
+        const isNavButtonFocused = Array.from(navButtons).some(button => button === document.activeElement);
+        if (input && !isNavButtonFocused && document.activeElement !== input && select && !selectFlag) {
+          select.click();
+          input.focus();
+          event.preventDefault();
+        }
+      }
+    };
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [selectFlag]);
 
   return (
     <nav>
@@ -98,17 +124,17 @@ const Navbar = ({ toggleTheme, theme, selectedCountry }) => {
           dropdownPosition='top'
           clearOnBlur
           clearOnSelect
-          noDataRenderer={() => <span className="no-data">{t('navbar.noData')}</span>}
+          noDataRenderer={() => <span className='no-data'>{t('navbar.noData')}</span>}
           values={selectedValue}
         />
       </div>
       <button onClick={toggleTheme}>
         {theme === 'dark' ? <Dark /> : <Light />}
       </button>
-      <div className='button' ref={translateButtonRef} onClick={(e) => { setOpenTranslateDropdown((prev) => !prev); e.stopPropagation(); }}>
+      <button className='translate' ref={translateButtonRef} onClick={(e) => { setOpenTranslateDropdown((prev) => !prev); e.stopPropagation(); }}>
         <Language />
-        {openTranslateDropdown && <TranslateDropdown setOpenTranslateDropdown={setOpenTranslateDropdown} ref={translateDropdownRef} />}
-      </div>
+        {openTranslateDropdown && <TranslateDropdown setOpenTranslateDropdown={setOpenTranslateDropdown}  ref={translateDropdownRef} />}
+      </button>
       <button>
         <Info />
       </button>

@@ -29,18 +29,18 @@ const Globe = ({ theme, onCountrySelect}) => {
       bgColor = '#1A1A1A';
       globeColor = '#222222';
       atmosphereColor = '#2B2B2B';
-      polygonColor = 'rgba(173, 181, 189,0.8)';
+      polygonColor = 'rgba(173,181,189,0.8)';
       ambientLightColor = '#1A1A1A';
       emissionLightColor = '#FFFFFF';
       atmosphereLevel = 0.04;
     } else {
-      bgColor = '#FFFFFF';
-      globeColor = '#ffffff';
-      atmosphereColor = '#ffffff';
-      polygonColor = 'rgba(255,255,255, 0.4)';
-      ambientLightColor = '#ffffff';
-      emissionLightColor = '#8566cc';
-      atmosphereLevel = 0.4;
+      bgColor = '#FCFDFE';
+      globeColor = '#F8F9FA';
+      atmosphereColor = '#EBEEF0';
+      polygonColor = 'rgba(200,200,200,0.6)';
+      ambientLightColor = '#EBEEF0';
+      emissionLightColor = '#8566CC';
+      atmosphereLevel = 0.02;
     }
     
     let globe;
@@ -55,6 +55,8 @@ const Globe = ({ theme, onCountrySelect}) => {
       }
       container.appendChild(r.domElement);
     });
+
+    renderers[0].setPixelRatio(window.devicePixelRatio);
 
     scene = new Scene();
     globe = new ThreeGlobe({ waitForGlobeReady: true, animateIn: true })
