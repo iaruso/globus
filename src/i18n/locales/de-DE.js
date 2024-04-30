@@ -2,7 +2,7 @@ export default {
   translations: {
     app: 'Globus',
     navbar: {
-      placeholder: 'Nach Land oder Kategorie suchen ...',
+      placeholder: 'Nach Land oder Kategorie suchen',
       noData: 'Keine Ergebnisse gefunden',
       translate: {
         en: 'Englisch',

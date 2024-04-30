@@ -2,7 +2,7 @@ export default {
   translations: {
     app: 'グロバス',
     navbar: {
-      placeholder: '国またはカテゴリーで検索 ...',
+      placeholder: '国またはカテゴリーで検索',
       noData: '結果は見つかりませんでした',
       translate: {
         en: '英語',

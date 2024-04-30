@@ -9,17 +9,23 @@ import Light from './icons/Light';
 import Dark from './icons/Dark';
 import Language from './icons/Language';
 import Info from './icons/Info';
+import Clear from './icons/Clear';
 
 const Navbar = ({ toggleTheme, theme, selectedCountry }) => {
   const { t, i18n } = useTranslation();
-  const translateButtonRef = useRef(null);
-  const translateDropdownRef = useRef(null);
   const selectRef = useRef(null);
-  const [openTranslateDropdown, setOpenTranslateDropdown] = useState(false);
   const [allOptionsData, setAllOptions] = useState([]);
   const [selectKey, setSelectKey] = useState(0);
-  const [selectedValue, setSelectedValue] = useState(undefined);
+  const [selectedValue, setSelectedValue] = useState([]);
   const [selectFlag, setSelectFlag] = useState(false);
+
+  const translateButtonRef = useRef(null);
+  const translateDropdownRef = useRef(null);
+  const [openTranslateDropdown, setOpenTranslateDropdown] = useState(false);
+
+  const [openInfoContainer, setOpenInfoContainer] = useState(false);
+  const infoButtonRef = useRef(null);
+  const infoContentRef = useRef(null);
 
   useEffect(() => {
     const countriesData = Object.entries(countriesDataJSON.countriesCollection).map(([iso3, countryData]) => ({
@@ -35,7 +41,7 @@ const Navbar = ({ toggleTheme, theme, selectedCountry }) => {
       };
     });
 
-    const allOptionsData = [...countriesData, ...categoriesData];
+    const allOptionsData = [...categoriesData, ...countriesData,];
 
     setAllOptions(allOptionsData);
   }, [t]);
@@ -64,6 +70,29 @@ const Navbar = ({ toggleTheme, theme, selectedCountry }) => {
   }, [translateDropdownRef, translateButtonRef]);
 
   useEffect(() => {
+    function handleClickOutside(event) {
+      const isLinkInsideInfoContainer = event.target.closest('.info-container a');
+      if (
+        (infoContentRef.current && !infoContentRef.current.contains(event.target)) &&
+        (infoButtonRef.current && !infoButtonRef.current.contains(event.target))
+      ) {
+        setOpenInfoContainer(false);
+      }
+      if (isLinkInsideInfoContainer) {
+        setTimeout(() => {
+          setOpenInfoContainer(false);
+        }, 500);
+      }
+    }
+  
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [infoContentRef, infoButtonRef]);
+
+  useEffect(() => {
     setSelectKey(prevKey => prevKey + 1);
   }, [i18n.language]);
 
@@ -71,12 +100,13 @@ const Navbar = ({ toggleTheme, theme, selectedCountry }) => {
     if (selectedCountry) {
       setSelectedValue([{ value: selectedCountry.toLowerCase(), label: t(countriesDataJSON.countriesCollection[selectedCountry.toUpperCase()].name) }]);
     } else {
-      setSelectedValue(undefined);
+      setSelectedValue([]);
     }
   }, [selectedCountry, t]);
 
-  const handleChange = (selectedOptions) => {
-    setSelectedValue(selectedOptions);
+  const handleChange = (value) => {
+    console.log(value);
+    setSelectedValue(value);
     setSelectFlag(true);
     setTimeout(() => {
       setSelectFlag(false);
@@ -104,8 +134,12 @@ const Navbar = ({ toggleTheme, theme, selectedCountry }) => {
     };
   }, [selectFlag]);
 
+  const clearAll = () => {
+    setSelectedValue([]);
+  };
+
   return (
-    <nav>
+    <nav className='loading-test'>
       <div className='logo-area'>
         <Logo className={'globus-logo'} />
         <h1 className='logo'>{t('app')}</h1>
@@ -124,20 +158,34 @@ const Navbar = ({ toggleTheme, theme, selectedCountry }) => {
           dropdownPosition='top'
           clearOnBlur
           clearOnSelect
+          clearRenderer={() => <button  className={`clear-select${selectedValue.length > 0 ? '' : ' hidden'}`} onClick={clearAll}><Clear/></button>}
           noDataRenderer={() => <span className='no-data'>{t('navbar.noData')}</span>}
           values={selectedValue}
         />
+        {selectedValue.length == 0 && 
+          <div className='select-enter'>
+            <span>↵</span>
+          </div>
+        }
       </div>
       <button onClick={toggleTheme}>
         {theme === 'dark' ? <Dark /> : <Light />}
       </button>
-      <button className='translate' ref={translateButtonRef} onClick={(e) => { setOpenTranslateDropdown((prev) => !prev); e.stopPropagation(); }}>
-        <Language />
+      <div className='custom-button'>
+        <button className='translate' ref={translateButtonRef} onClick={(e) => { setOpenTranslateDropdown((prev) => !prev); e.stopPropagation(); }}>
+          <Language />
+        </button>
         {openTranslateDropdown && <TranslateDropdown setOpenTranslateDropdown={setOpenTranslateDropdown}  ref={translateDropdownRef} />}
-      </button>
-      <button>
-        <Info />
-      </button>
+      </div>
+      <div className='custom-button'>
+        <button className='info' ref={infoButtonRef} onClick={(e) => { setOpenInfoContainer((prev) => !prev); e.stopPropagation();}}>
+          <Info />
+        </button>
+        {openInfoContainer && <div ref={infoContentRef} className='info-container'>
+          <p>{t('navbar.info.description')}</p>
+          <a href='https://github.com/iaruso/globus' target='_blank'>{t('navbar.info.sourceCode')}</a>
+        </div>}
+      </div>
     </nav>
   );
 };

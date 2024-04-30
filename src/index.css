@@ -14,7 +14,7 @@
   --midnight:  #2B2B2B;
   --charcoal:  #3D4145;
   --slate:     #505A62;
-  --nevada:    #6B7785;
+  --nevada:    #687482;
   --ash:       #ADB5BD;
   --silver:    #DEE2E6;
   --porcelain: #EBEEF0;
@@ -42,13 +42,16 @@ div#root.light {
 
   --container-bg: var(--polar);
   --border-color: var(--silver);
-  --text-color: var(--charcoal);
+  --text-color: var(--nevada);
   --placeholder-color: var(--nevada);
   --outline-color: #6B778566; /* 20% opacity - Nevada */
-  --logo-color: var(--slate);
-  --icon-color: var(--slate);
+  --logo-color: var(--nevada);
+  --icon-color: var(--nevada);
   --input-hover-bg: var(--cloud);
   --input-selected-bg: var(--porcelain);
+  --loading-shadow: var(--porcelain);
+  --loading-shadow-light: var(--cloud);
+  --loading-shadow-lightest: var(--white);
   --globe-button-bg: var(--cloud);
   --globe-button-bg-hover: var(--polar);
   --globe-button-border-color: var(--silver);
@@ -78,6 +81,9 @@ div#root.dark {
   --icon-color: var(--ash);
   --input-hover-bg: var(--midnight);
   --input-selected-bg: var(--charcoal);
+  --loading-shadow: var(--charcoal);
+  --loading-shadow-light: var(--midnight);
+  --loading-shadow-lightest: var(--black);
   --globe-button-bg: var(--black);
   --globe-button-bg-hover: var(--midnight);
   --globe-button-border-color: var(--black);

@@ -44,6 +44,32 @@ nav {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  transform: translate(0);
+  transform-style: preserve-3d;
+}
+
+nav.loading-test:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translate3d(0, 0, -1px);
+  background: linear-gradient(-90deg, var(--loading-shadow-lightest), var(--loading-shadow-light) 35%, var(--loading-shadow) 50%, var(--loading-shadow-light) 65%, var(--loading-shadow-lightest) 100%);
+  -webkit-animation: loadingAnimation 3s infinite;
+  animation: loadingAnimation 3s infinite;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  background-size: 200% 200%;
+  background-position: 200% 0%;
+  filter: blur(0.5rem);
+}
+
+@keyframes loadingAnimation {
+  0% {
+    background-position: 200% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
 }
 
 nav {
@@ -82,6 +108,26 @@ nav .search-area {
   height: 2rem;
   flex: 1;
   width: 0;
+  position: relative;
+}
+
+.select-enter {
+  position: absolute;
+  top: 0;
+  right: 0.5rem;
+  display: flex;
+  align-items: center;
+  height: 2rem;
+}
+
+.select-enter span {
+  font-weight: 100;
+  color: var(--icon-color);
+  font-size: 0.75rem;
+  padding: 0.125rem;
+  border: var(--border-width) solid var(--border-color);
+  height: 1.25rem;
+  border-radius: 0.125rem;
 }
 
 nav .react-dropdown-select {
@@ -101,12 +147,47 @@ nav .react-dropdown-select {
 
 nav .react-dropdown-select:hover {
   border-color: var(--border-color) !important;
+  background-color: var(--input-hover-bg) !important;
 }
 
 nav .react-dropdown-select:focus, nav .react-dropdown-select:focus-within {
+  background-color: var(--input-hover-bg) !important;
   border-color: var(--border-color) !important;
+}
+
+nav .search-area > div:hover ~ .select-enter, nav .search-area > div:focus ~ .select-enter, nav .search-area > div:focus-within ~ .select-enter, nav .search-area > div:focus-visible {
+  display: none !important;
+}
+
+nav .react-dropdown-select:focus-visible {
   background-color: var(--input-hover-bg) !important;
   border-color: var(--outline-color) !important;
+  outline: none !important;
+}
+
+nav .react-dropdown-select .clear-select {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  pointer-events: unset !important;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 0.25rem;
+  border: none;
+  outline: none;
+  background-color: var(--container-bg);
+}
+
+nav .react-dropdown-select .clear-select.hidden {
+  display: none;
+}
+
+nav .react-dropdown-select .clear-select svg {
+  height: 0.75rem;
+  width: 0.75rem;
+  fill: var(--icon-color);
 }
 
 nav .react-dropdown-select-content {
@@ -194,31 +275,20 @@ nav .react-dropdown-select-input:placeholder-shown {
   text-overflow: ellipsis;
 }
 
-nav .react-dropdown-select-clear {
-  margin: 0;
-  width: 1.5rem;
-  height: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
-  color: var(--icon-color) !important;
-  border-radius: 0.25rem;
-  cursor: pointer !important;
-  pointer-events: unset !important;
-}
-
 nav .react-dropdown-select-dropdown-handle {
   display: none !important;
 }
 
-nav .react-dropdown-select-clear:hover, nav .react-dropdown-select-clear:focus, nav .react-dropdown-select-clear:focus-within {
+nav .clear-select:hover, nav .clear-select:focus, nav .clear-select:focus-within {
   background-color: var(--input-hover-bg);
 }
 
-nav .react-dropdown-select:focus .react-dropdown-select-clear:hover, nav .react-dropdown-select:focus-within .react-dropdown-select-clear:hover {
-  background-color: var(--container-bg);
+nav .react-dropdown-select:hover .clear-select, nav .react-dropdown-select:focus .clear-select, nav .react-dropdown-select:focus-within .clear-select {
+  background-color: var(--input-hover-bg);
+}
+
+nav .react-dropdown-select:hover .clear-select:hover, nav .react-dropdown-select:focus .clear-selectr:hover, nav .react-dropdown-select:focus-within .clear-select:hover {
+  background-color: var(--container-bg) !important;
 }
 
 nav .react-dropdown-select .no-data {
@@ -229,11 +299,13 @@ nav .react-dropdown-select .no-data {
   font-family: 'Manrope', sans-serif;
 }
 
-nav button.translate {
+nav .custom-button {
   position: relative;
+  height: 2rem;
+  width: 2rem;
 }
 
-nav > button, nav button.translate {
+nav > button, nav button.translate, nav button.info{
   height: 2rem;
   width: 2rem;
   background-color: var(--container-bg);
@@ -247,23 +319,29 @@ nav > button, nav button.translate {
   transition: background-color 0.2s ease-in-out;
 }
 
-nav > button svg, nav button.translate svg{
+nav > button svg, nav button.translate svg, nav button.info svg{
   height: 1rem;
   width: 1rem;
   fill: var(--icon-color);
 }
 
-nav > button:hover,  nav button.translate:hover {
+nav > button:hover,  nav button.translate:hover, nav button.info:hover {
   background-color: var(--input-hover-bg);
 }
 
-nav > button:focus, nav > button:focus-visible, nav button.translate:focus, nav button.translate:focus-visible {
+nav > button:focus-visible, nav button.translate:focus-visible, nav button.info:focus-visible {
   background-color: var(--input-hover-bg);
   border-color: var(--outline-color);
-  outline: none;
+  outline: none !important;
 }
 
-.translate-dropdown {
+.clear-select:focus-visible {
+  background-color: var(--container-bg) !important;
+  border: var(--border-width) solid var(--outline-color) !important;
+  outline: none !important;
+}
+
+.translate-dropdown, .info-container {
   position: absolute;
   bottom: 3rem;
   right: 0;
@@ -308,6 +386,43 @@ nav > button:focus, nav > button:focus-visible, nav button.translate:focus, nav 
   border-bottom-right-radius: 0.2rem;
 }
 
+.info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 12rem;
+  padding: 0.5rem;
+  cursor: default;
+}
+
+.info-container p {
+  font-size: 0.75rem;
+  text-align: start;
+  font-weight: 500;
+  color: var(--text-color);
+  font-family: 'Manrope', sans-serif;
+}
+
+.info-container a {
+  font-size: 0.75rem;
+  text-align: start;
+  font-weight: 500;
+  color: var(--text-color);
+  font-family: 'Manrope', sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  width: max-content;
+  margin-left: auto;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  background-color: var(--input-hover-bg);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.info-container a:hover {
+  background-color: var(--input-selected-bg);
+}
+
 @media screen and (max-width: 1440px) {
   nav {
     padding: 0.5rem 10vw;
@@ -327,11 +442,6 @@ nav > button:focus, nav > button:focus-visible, nav button.translate:focus, nav 
   nav .react-dropdown-select-input {
     width: 100%;
     font-size: 0.625rem;
-  }
-
-  nav .react-dropdown-select-clear {
-    width: 1.5rem;
-    height: 1.5rem;
   }
 
   .react-dropdown-select-content > :not(:first-child).react-dropdown-select-input {
