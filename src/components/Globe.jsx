@@ -26,8 +26,8 @@ const Globe = ({ theme, onCountrySelect}) => {
     let bgColor, globeColor, atmosphereColor, polygonColor, ambientLightColor, emissionLightColor;
 
     if (savedTheme === 'dark') {
-      bgColor = '#1A1A1A';
-      globeColor = '#222222';
+      bgColor = '#212121';
+      globeColor = '#2B2B2B';
       atmosphereColor = '#2B2B2B';
       polygonColor = 'rgba(173,181,189,0.8)';
       ambientLightColor = '#1A1A1A';
@@ -119,7 +119,7 @@ const Globe = ({ theme, onCountrySelect}) => {
     controls = new OrbitControls(camera, renderers[0].domElement);
     controls.enableDamping = true;
     controls.dynamicDampingFactor = 0.01;
-    controls.enablePan = false;
+    controls.enablePan = true;
     controls.minDistance = 150;
     controls.maxDistance = 300;
     controls.rotateSpeed = 0.4;

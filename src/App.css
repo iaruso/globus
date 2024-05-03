@@ -219,6 +219,7 @@ nav .react-dropdown-select-content > span {
 }
 
 nav .react-dropdown-select-dropdown {
+  z-index: 1000 !important;
   border: var(--border-width) solid var(--border-color);
   border-radius: 0.25rem;
   box-shadow: none !important;
@@ -341,7 +342,7 @@ nav > button:focus-visible, nav button.translate:focus-visible, nav button.info:
   outline: none !important;
 }
 
-.translate-dropdown, .info-container {
+.translate-dropdown, .info-box {
   position: absolute;
   bottom: 3rem;
   right: 0;
@@ -386,7 +387,7 @@ nav > button:focus-visible, nav button.translate:focus-visible, nav button.info:
   border-bottom-right-radius: 0.2rem;
 }
 
-.info-container {
+.info-box {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -395,7 +396,7 @@ nav > button:focus-visible, nav button.translate:focus-visible, nav button.info:
   cursor: default;
 }
 
-.info-container p {
+.info-box p {
   font-size: 0.75rem;
   text-align: start;
   font-weight: 500;
@@ -403,7 +404,7 @@ nav > button:focus-visible, nav button.translate:focus-visible, nav button.info:
   font-family: 'Manrope', sans-serif;
 }
 
-.info-container a {
+.info-box a {
   font-size: 0.75rem;
   text-align: start;
   font-weight: 500;
@@ -419,13 +420,133 @@ nav > button:focus-visible, nav button.translate:focus-visible, nav button.info:
   transition: background-color 0.2s ease-in-out;
 }
 
-.info-container a:hover {
+.info-box a:hover {
   background-color: var(--input-selected-bg);
+}
+
+/* Info container */
+.info-container {
+  position: fixed;
+  z-index: 999; /* 1 less than the select */
+  margin: 0.5rem 25vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: calc(100% - 50vw);
+  max-height: 24rem;
+  bottom: calc(3rem + var(--border-width));
+  padding: 1rem;
+  background-color: var(--container-bg);
+  border-radius: 0.25rem;
+  border: var(--border-width) solid var(--border-color);
+}
+
+.country-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.country-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.country-details h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-color);
+  font-family: 'Manrope', sans-serif;
+}
+
+.country-details h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-color);
+  font-family: 'Manrope', sans-serif;
+}
+
+.info-content {
+  overflow-y: auto;
+}
+
+/* For indicators */
+.indicator-info h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-color);
+  font-family: 'Manrope', sans-serif;
+}
+
+.info-container .table {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 0;
+  flex: 1;
+  border-radius: 0.25rem;
+  border: var(--border-width) solid var(--border-color);
+}
+
+.info-container .table-header {
+  position: sticky;
+  top: 0;
+  background-color: var(--table-header-bg);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  height: 2rem;
+  align-items: center;
+  border-radius: 0.25rem 0.25rem 0 0;
+  border-bottom: var(--border-width) solid var(--border-color);
+}
+
+.info-container .table-header > div, .info-container .table-row > div {
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-color);
+  font-family: 'Manrope', sans-serif;
+  height: 2rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.info-container .table-header > div:first-child {
+  border-right: var(--border-width) solid var(--border-color);
+}
+
+.info-container .table-body {
+  height: 0;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.info-container .table-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  min-height: 1.5rem;
+  height: 2rem;
+  align-items: center;
+}
+
+.info-container .table-row:not(:last-child) > div {
+  border-bottom: var(--border-width) solid var(--border-color);
+}
+
+.info-container .table-row > div:first-child {
+  border-right: var(--border-width) solid var(--border-color);
 }
 
 @media screen and (max-width: 1440px) {
   nav {
     padding: 0.5rem 10vw;
+  }
+  
+  .info-container {
+    margin: 0.5rem 10vw;
+    width: calc(100% - 20vw);
   }
 }
 
@@ -433,12 +554,20 @@ nav > button:focus-visible, nav button.translate:focus-visible, nav button.info:
   nav {
     padding: 0.5rem;
   }
+
+  .info-container {
+    margin: 0.5rem;
+    width: calc(100% - 1rem);
+  }
+
   nav .globus-logo {
     display: block;
   }
+
   nav .logo {
     display: none;
   }
+
   nav .react-dropdown-select-input {
     width: 100%;
     font-size: 0.625rem;
@@ -446,5 +575,5 @@ nav > button:focus-visible, nav button.translate:focus-visible, nav button.info:
 
   .react-dropdown-select-content > :not(:first-child).react-dropdown-select-input {
     display: none;
-  }  
+  }
 }

@@ -1,13 +1,15 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useState, Suspense, useEffect } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 import Navbar from './components/Navbar';
-import Globe from './components/Globe';
+const Globe = React.lazy(() => import('./components/Globe'));
+import Info from './components/Info';
 
 function App() {
   const { t } = useTranslation();
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+  const [selectedInfo, setSelectedInfo] = useState(null);
   const [selectedCountry, setSelectedCountry] = useState(null);
 
   const toggleTheme = () => {
@@ -16,9 +18,13 @@ function App() {
     setTheme(newTheme);
   };
 
-  const handleCountrySelect = (iso3) => {
-    setSelectedCountry(iso3);
-  };
+  useEffect(() => {
+    setSelectedInfo(selectedCountry);
+  }, [selectedCountry]);
+  
+  useEffect(() => {
+    console.log('a');
+  }, [selectedInfo]);
 
   return (
     <>
@@ -28,10 +34,13 @@ function App() {
           <title>{t('app')}</title>
         </Helmet>
       </HelmetProvider>
-      <div className="container">
-        <Globe theme={theme} toggleTheme={toggleTheme} onCountrySelect={handleCountrySelect} />
+      <div className="container"> 
+        <Suspense fallback={<div>Loading...</div>}>
+          <Globe theme={theme} toggleTheme={toggleTheme} onCountrySelect={setSelectedCountry} />
+        </Suspense>
       </div>
-      <Navbar toggleTheme={toggleTheme} theme={theme} selectedCountry={selectedCountry} />
+      <Navbar toggleTheme={toggleTheme} theme={theme} selectedCountry={selectedCountry} onSelectedInfo={setSelectedInfo} />
+      <Info selectedInfo={selectedInfo} />
     </>
   );
 }

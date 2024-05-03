@@ -11,13 +11,14 @@ import Language from './icons/Language';
 import Info from './icons/Info';
 import Clear from './icons/Clear';
 
-const Navbar = ({ toggleTheme, theme, selectedCountry }) => {
+const Navbar = ({ toggleTheme, theme, selectedCountry, onSelectedInfo }) => {
   const { t, i18n } = useTranslation();
   const selectRef = useRef(null);
   const [allOptionsData, setAllOptions] = useState([]);
   const [selectKey, setSelectKey] = useState(0);
   const [selectedValue, setSelectedValue] = useState([]);
   const [selectFlag, setSelectFlag] = useState(false);
+  const [fromEffect, setFromEffect] = useState(false);
 
   const translateButtonRef = useRef(null);
   const translateDropdownRef = useRef(null);
@@ -98,19 +99,34 @@ const Navbar = ({ toggleTheme, theme, selectedCountry }) => {
 
   useEffect(() => {
     if (selectedCountry) {
+      setFromEffect(true);
       setSelectedValue([{ value: selectedCountry.toLowerCase(), label: t(countriesDataJSON.countriesCollection[selectedCountry.toUpperCase()].name) }]);
     } else {
       setSelectedValue([]);
     }
   }, [selectedCountry, t]);
 
+  useEffect(() => {
+    if (fromEffect) {
+      setFromEffect(false);
+    }
+  }, [selectedValue, fromEffect]);
+
   const handleChange = (value) => {
-    console.log(value);
-    setSelectedValue(value);
-    setSelectFlag(true);
-    setTimeout(() => {
-      setSelectFlag(false);
-    }, 100);
+    if (!fromEffect) {
+      setSelectedValue(value);
+      onSelectedInfo(value);
+      setSelectFlag(true);
+      setTimeout(() => {
+        setSelectFlag(false);
+      }, 100);
+    }
+  };
+
+  const clearAll = () => {
+    setSelectedValue([]);
+    onSelectedInfo([]);
+    setFromEffect(true);
   };
 
   useEffect(() => {
@@ -134,10 +150,6 @@ const Navbar = ({ toggleTheme, theme, selectedCountry }) => {
     };
   }, [selectFlag]);
 
-  const clearAll = () => {
-    setSelectedValue([]);
-  };
-
   return (
     <nav className='loading-test'>
       <div className='logo-area'>
@@ -158,7 +170,7 @@ const Navbar = ({ toggleTheme, theme, selectedCountry }) => {
           dropdownPosition='top'
           clearOnBlur
           clearOnSelect
-          clearRenderer={() => <button  className={`clear-select${selectedValue.length > 0 ? '' : ' hidden'}`} onClick={clearAll}><Clear/></button>}
+          clearRenderer={() => <button className={`clear-select${selectedValue.length > 0 ? '' : ' hidden'}`} onClick={clearAll}><Clear/></button>}
           noDataRenderer={() => <span className='no-data'>{t('navbar.noData')}</span>}
           values={selectedValue}
         />

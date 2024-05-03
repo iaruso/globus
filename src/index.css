@@ -41,6 +41,7 @@ div#root.light {
   --development-max: #1E9883;
 
   --container-bg: var(--polar);
+  --table-header-bg: var(--cloud);
   --border-color: var(--silver);
   --text-color: var(--nevada);
   --placeholder-color: var(--nevada);
@@ -73,6 +74,7 @@ div#root.dark {
   --development-max: #156E60;
 
   --container-bg: var(--black);
+  --table-header-bg: var(--midnight);
   --border-color: var(--midnight);
   --text-color: var(--silver);
   --placeholder-color: var(--ash);
