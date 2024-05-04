@@ -14,43 +14,51 @@ export default {
         ja: '日本語'
       },
       info: {
-        description: 'さまざまな国々間の統計を探索します（世界銀行のデータに基づく）。 ',
+        description: 'さまざまな国々間の統計を探索します（The World Bank Groupのデータに基づきます）。',
         sourceCode: 'ソースコード'
       }
     },
-    categories: {
-      AG_SRF_TOTL_K2: '表面積',
-      SP_POP_TOTL: '総人口',
-      SP_POP_GROW: '人口増加',
-      EN_POP_DNST: '人口密度',
-      NY_GDP_MKTP_CD: '国内総生産（GDP）',
-      NY_GDP_MKTP_KD_ZG: 'GDP成長率',
-      NY_GDP_PCAP_CD: '一人当たりのGDP',
-      NE_GDI_TOTL_ZS: '総資本形成率',
-      GC_TAX_TOTL_GD_ZS: '税収',
-      SL_UEM_TOTL_NE_ZS: '失業率（国家推計）',
-      SI_POV_NAHC: '貧困（国別の貧困基準）',
-      SP_DYN_LE00_IN: '出生時平均寿命',
-      SE_ADT_LITR_ZS: '識字率（成人）',
-      SH_STA_BRTC_ZS: '専門的な医療スタッフによる出産数',
-      SH_DYN_MORT: '乳幼児死亡率（1000人あたり）',
-      SP_DYN_CONU_ZS: '避妊の普及率',
-      SP_DYN_TFRT_IN: '出生率',
-      SE_PRM_CMPT_ZS: '初等教育修了率',
-      SE_ENR_PRSC_FM_ZS: '学校登録',
-      EG_USE_PCAP: '一人当たりのエネルギー使用量',
-      EN_ATM_CO2E_PC: '一人当たりの二酸化炭素排出量',
-      AG_LND_FRST_K2: '森林面積',
-      ER_PTD_TOTL_ZS: '陸上と海洋の保護地域',
-      NE_EXP_GNFS_ZS: '商品とサービスの輸出',
-      NE_IMP_GNFS_ZS: '商品とサービスの輸入',
-      TG_VAL_TOTL_GD_ZS: '商品の取引',
-      NE_TRD_GNFS_ZS: '貿易',
-      SH_H2O_BASW_ZS: '清潔な水へのアクセス',
-      SH_STA_BASS_ZS: '衛生施設へのアクセス',
-      EG_USE_ELEC_KH_PC: '一人当たりの電力消費',
-      IT_CEL_SETS_P2: '携帯電話の加入者数（100人当たり）',
-      SP_URB_GROW: '都市人口の増加率'
+    info: {
+      country: '国',
+      indicator: '指標',
+      value: '値',
+      million: '百万',
+      billion: '十億',
+      trillion: '兆'
+    },
+    indicators: {
+      AG_SRF_TOTL_K2: "表面積（km²）",
+      SP_POP_TOTL: "総人口",
+      SP_POP_GROW: "人口増加率（年率 %）",
+      EN_POP_DNST: "人口密度（1km²あたりの人数）",
+      NY_GDP_MKTP_CD: "GDP（現行米ドル）",
+      NY_GDP_MKTP_KD_ZG: "GDP成長率（年率 %）",
+      NY_GDP_PCAP_CD: "一人当たりのGDP（現行米ドル）",
+      NE_GDI_TOTL_ZS: "GDPに対する総投資（%）",
+      GC_TAX_TOTL_GD_ZS: "税収（GDPの%）",
+      SL_UEM_TOTL_NE_ZS: "失業率（国内見積もり %）",
+      SI_POV_NAHC: "貧困（国内貧困線での %）",
+      SP_DYN_LE00_IN: "出生時の平均寿命（年）",
+      SE_ADT_LITR_ZS: "識字率（成人 %）",
+      SH_STA_BRTC_ZS: "医療スタッフによって出生（%）",
+      SH_DYN_MORT: "乳幼児死亡率（1000人あたり）",
+      SP_DYN_CONU_ZS: "避妊率（15〜49歳の女性の %）",
+      SP_DYN_TFRT_IN: "出生率（合計）",
+      SE_PRM_CMPT_ZS: "初等教育の修了率（%）",
+      SE_ENR_PRSC_FM_ZS: "学校の入学率（GPI）",
+      EG_USE_PCAP_KG_OE: "一人当たりのエネルギー使用量（キログラム換算）",
+      EN_ATM_CO2E_PC: "一人当たりのCO2排出量（人口あたりのメトリックトン）",
+      AG_LND_FRST_K2: "森林面積（km²）",
+      ER_PTD_TOTL_ZS: "陸上と海洋の保護地域（%総面積）",
+      NE_EXP_GNFS_ZS: "財貨とサービスの輸出（% GDP）",
+      NE_IMP_GNFS_ZS: "財貨とサービスの輸入（% GDP）",
+      TG_VAL_TOTL_GD_ZS: "商品取引（% GDP）",
+      NE_TRD_GNFS_ZS: "貿易（% GDP）",
+      SH_H2O_BASW_ZS: "清潔な水へのアクセス（%総人口）",
+      SH_STA_BASS_ZS: "衛生施設のアクセス（%総人口）",
+      EG_USE_ELEC_KH_PC: "一人当たりの電力消費量（キロワット時）",
+      IT_CEL_SETS_P2: "携帯電話の契約（100人当たり）",
+      SP_URB_GROW: "都市人口の増加率（年率 %）"
     },
     country: {
       afg: {
@@ -741,10 +749,6 @@ export default {
         name: 'シリア',
         capital: 'ダマスカス'
       },
-      twn: {
-        name: '台湾',
-        capital: '台北'
-      },
       tjk: {
         name: 'タジキスタン',
         capital: 'ドゥシャンベ'
@@ -828,6 +832,10 @@ export default {
       yem: {
         name: 'イエメン',
         capital: 'サヌア'
+      },
+      xkx: {
+        name: 'コソボ',
+        capital: 'プリシュティナ'
       },
       zmb: {
         name: 'ザンビア',

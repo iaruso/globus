@@ -14,43 +14,51 @@ export default {
         ja: 'Japonés'
       },
       info: {
-        description: 'Explore estadísticas entre los diversos países (según los datos del Banco Mundial).',
+        description: 'Explora estadísticas entre los diversos países (según los datos del The World Bank Group).',
         sourceCode: 'Código fuente'
       }
     },
-    categories: {
-      AG_SRF_TOTL_K2: 'Superficie terrestre',
+    info: {
+      country: 'País',
+      indicator: 'Indicador',
+      value: 'Valor',
+      million: 'M',
+      billion: 'B',
+      trillion: 'T'
+    },
+    indicators: {
+      AG_SRF_TOTL_K2: 'Superficie terrestre (km²)',
       SP_POP_TOTL: 'Población total',
-      SP_POP_GROW: 'Crecimiento de la población',
-      EN_POP_DNST: 'Densidad de población',
-      NY_GDP_MKTP_CD: 'PIB',
-      NY_GDP_MKTP_KD_ZG: 'Tasa de crecimiento del PIB',
-      NY_GDP_PCAP_CD: 'PIB per cápita',
-      NE_GDI_TOTL_ZS: 'Formación bruta de capital',
-      GC_TAX_TOTL_GD_ZS: 'Ingresos fiscales',
-      SL_UEM_TOTL_NE_ZS: 'Desempleo (estimación nacional)',
-      SI_POV_NAHC: 'Pobreza (en umbrales de pobreza nacionales)',
-      SP_DYN_LE00_IN: 'Esperanza de vida al nacer',
-      SE_ADT_LITR_ZS: 'Tasa de alfabetización (adultos)',
-      SH_STA_BRTC_ZS: 'Nacimientos atendidos por personal sanitario cualificado',
+      SP_POP_GROW: 'Crecimiento de la población (% anual)',
+      EN_POP_DNST: 'Densidad de población (personas por km²)',
+      NY_GDP_MKTP_CD: 'PIB (USD corriente)',
+      NY_GDP_MKTP_KD_ZG: 'Tasa de crecimiento del PIB (% anual)',
+      NY_GDP_PCAP_CD: 'PIB per cápita (USD corriente)',
+      NE_GDI_TOTL_ZS: 'Formación bruta de capital (% del PIB)',
+      GC_TAX_TOTL_GD_ZS: 'Ingresos fiscales (% del PIB)',
+      SL_UEM_TOTL_NE_ZS: 'Desempleo (estimación nacional en %)',
+      SI_POV_NAHC: 'Pobreza (en umbrales de pobreza nacionales en %)',
+      SP_DYN_LE00_IN: 'Esperanza de vida al nacer (años)',
+      SE_ADT_LITR_ZS: 'Tasa de alfabetización (adultos en %)',
+      SH_STA_BRTC_ZS: 'Nacimientos atendidos por personal sanitario cualificado (% del total)',
       SH_DYN_MORT: 'Tasa de mortalidad infantil (por 1000 nacidos)',
-      SP_DYN_CONU_ZS: 'Prevalencia de métodos anticonceptivos',
-      SP_DYN_TFRT_IN: 'Tasa de fecundidad',
-      SE_PRM_CMPT_ZS: 'Tasa de finalización de la educación primaria',
-      SE_ENR_PRSC_FM_ZS: 'Inscripción escolar',
-      EG_USE_PCAP: 'Uso de energía per cápita',
-      EN_ATM_CO2E_PC: 'Emisiones de CO2 per cápita',
-      AG_LND_FRST_K2: 'Superficie forestal',
-      ER_PTD_TOTL_ZS: 'Áreas protegidas terrestres y marinas',
-      NE_EXP_GNFS_ZS: 'Exportaciones de bienes y servicios',
-      NE_IMP_GNFS_ZS: 'Importaciones de bienes y servicios',
-      TG_VAL_TOTL_GD_ZS: 'Comercio de mercancías',
-      NE_TRD_GNFS_ZS: 'Comercio',
-      SH_H2O_BASW_ZS: 'Acceso a agua limpia',
-      SH_STA_BASS_ZS: 'Acceso a servicios de saneamiento',
-      EG_USE_ELEC_KH_PC: 'Consumo de electricidad per cápita',
+      SP_DYN_CONU_ZS: 'Prevalencia de métodos anticonceptivos (% de mujeres de 15 a 49 años)',
+      SP_DYN_TFRT_IN: 'Tasa de fecundidad (total)',
+      SE_PRM_CMPT_ZS: 'Tasa de finalización de la educación primaria (en %)',
+      SE_ENR_PRSC_FM_ZS: 'Inscripción escolar (IPG)',
+      EG_USE_PCAP: 'Uso de energía per cápita (kg equivalentes de petróleo)',
+      EN_ATM_CO2E_PC: 'Emisiones de CO2 per cápita (toneladas métricas)',
+      AG_LND_FRST_K2: 'Superficie forestal (km²)',
+      ER_PTD_TOTL_ZS: 'Áreas protegidas terrestres y marinas (% del total)',
+      NE_EXP_GNFS_ZS: 'Exportaciones de bienes y servicios (en % del PIB)',
+      NE_IMP_GNFS_ZS: 'Importaciones de bienes y servicios (en % del PIB)',
+      TG_VAL_TOTL_GD_ZS: 'Comercio de mercancías (% del PIB)',
+      NE_TRD_GNFS_ZS: 'Comercio (% del PIB)',
+      SH_H2O_BASW_ZS: 'Acceso a agua limpia (en % de la población)',
+      SH_STA_BASS_ZS: 'Acceso a servicios de saneamiento (en % de la población)',
+      EG_USE_ELEC_KH_PC: 'Consumo de electricidad per cápita (kWh)',
       IT_CEL_SETS_P2: 'Suscripciones a teléfonos celulares (por 100 personas)',
-      SP_URB_GROW: 'Crecimiento de la población urbana'
+      SP_URB_GROW: 'Crecimiento de la población urbana (% anual)',
     },
     country: {
       afg: {
@@ -741,10 +749,6 @@ export default {
         name: 'Siria',
         capital: 'Damasco'
       },
-      twn: {
-        name: 'Taiwán',
-        capital: 'Taipéi'
-      },
       tjk: {
         name: 'Tayikistán',
         capital: 'Dusambé'
@@ -828,6 +832,10 @@ export default {
       yem: {
         name: 'Yemen',
         capital: 'Saná'
+      },
+      xkx: {
+        name: 'Kosovo',
+        capital: 'Pristina'
       },
       zmb: {
         name: 'Zambia',

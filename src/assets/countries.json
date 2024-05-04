@@ -1014,12 +1014,6 @@
       "iso2": "SY",
       "coordinates": [34.8021, 38.9968]
     },
-    "TWN": {
-      "name": "country.twn.name",
-      "capital": "country.twn.capital",
-      "iso2": "TW",
-      "coordinates": [23.6978, 120.9605]
-    },
     "TJK": {
       "name": "country.tjk.name",
       "capital": "country.tjk.capital",
@@ -1151,6 +1145,13 @@
       "capital": "country.yem.capital",
       "iso2": "YE",
       "coordinates": [15.552727, 48.516388]
+    },
+    "XKX":
+    {
+      "name": "country.xkx.name",
+      "capital": "country.xkx.capital",
+      "iso2": "XK",
+      "coordinates": [42.602636, 20.902977]
     },
     "ZMB": {
       "name": "country.zmb.name",

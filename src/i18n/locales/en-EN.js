@@ -14,43 +14,51 @@ export default {
         ja: 'Japanese'
       },
       info: {
-        description: 'Explore statistics between the various countries (according to The World Bank data).',
+        description: 'Explore statistics between the various countries (according to The World Bank Group data).',
         sourceCode: 'Source code'
       }
     },
-    categories: {
-      AG_SRF_TOTL_K2: "Surface area",
+    info: {
+      country: 'Country',
+      indicator: 'Indicator',
+      value: 'Value',
+      million: 'M',
+      billion: 'B',
+      trillion: 'T'
+    },
+    indicators: {
+      AG_SRF_TOTL_K2: "Surface area (sq. km)",
       SP_POP_TOTL: "Total population",
-      SP_POP_GROW: "Population growth",
-      EN_POP_DNST: "Population density",
-      NY_GDP_MKTP_CD: "GDP",
-      NY_GDP_MKTP_KD_ZG: "GDP growth rate",
-      NY_GDP_PCAP_CD: "GDP per capita",
-      NE_GDI_TOTL_ZS: "Gross capital formation",
-      GC_TAX_TOTL_GD_ZS: "Tax revenue",
-      SL_UEM_TOTL_NE_ZS: "Unemployment (national estimate)",
-      SI_POV_NAHC: "Poverty (at national poverty lines)",
-      SP_DYN_LE00_IN: "Life expectancy at birth",
-      SE_ADT_LITR_ZS: "Literacy rate (adult)",
-      SH_STA_BRTC_ZS: "Births attended by skilled health staff",
+      SP_POP_GROW: "Population growth (annual %)",
+      EN_POP_DNST: "Population density (people per sq. km)",
+      NY_GDP_MKTP_CD: "GDP (current US$)",
+      NY_GDP_MKTP_KD_ZG: "GDP growth rate (annual %)",
+      NY_GDP_PCAP_CD: "GDP per capita (current US$)",
+      NE_GDI_TOTL_ZS: "Gross capital formation (% of GDP)",
+      GC_TAX_TOTL_GD_ZS: "Tax revenue (% of GDP)",
+      SL_UEM_TOTL_NE_ZS: "Unemployment (national estimate in %)",
+      SI_POV_NAHC: "Poverty (at national poverty lines in %)",
+      SP_DYN_LE00_IN: "Life expectancy at birth (years)",
+      SE_ADT_LITR_ZS: "Literacy rate (adult in %)",
+      SH_STA_BRTC_ZS: "Births attended by skilled health staff (% of total)",
       SH_DYN_MORT: "Child mortality rate (per 1000)",
-      SP_DYN_CONU_ZS: "Contraceptive prevalence",
-      SP_DYN_TFRT_IN: "Fertility rate",
-      SE_PRM_CMPT_ZS: "Primary completion rate",
-      SE_ENR_PRSC_FM_ZS: "School enrollment",
-      EG_USE_PCAP_KG_OE: "Energy use per capita",
-      EN_ATM_CO2E_PC: "CO2 emissions per capita",
+      SP_DYN_CONU_ZS: "Contraceptive prevalence (% women ages 15-49)",
+      SP_DYN_TFRT_IN: "Fertility rate (total)",
+      SE_PRM_CMPT_ZS: "Primary completion rate (in %)",
+      SE_ENR_PRSC_FM_ZS: "School enrollment (GPI)",
+      EG_USE_PCAP_KG_OE: "Energy use per capita (kg of oil equivalent)",
+      EN_ATM_CO2E_PC: "CO2 emissions per capita (metric tons per capita)",
       AG_LND_FRST_K2: "Forest area (sq. km)",
-      ER_PTD_TOTL_ZS: "Terrestrial and marine protected areas",
-      NE_EXP_GNFS_ZS: "Exports of goods and services",
-      NE_IMP_GNFS_ZS: "Imports of goods and services",
-      TG_VAL_TOTL_GD_ZS: "Merchandise trade",
-      NE_TRD_GNFS_ZS: "Trade",
-      SH_H2O_BASW_ZS: "Access to clean water",
-      SH_STA_BASS_ZS: "Sanitation facilities access",
-      EG_USE_ELEC_KH_PC: "Electric power consumption",
+      ER_PTD_TOTL_ZS: "Terrestrial and marine protected areas (% of total territorial area)",
+      NE_EXP_GNFS_ZS: "Exports of goods and services (% of GDP)",
+      NE_IMP_GNFS_ZS: "Imports of goods and services (% of GDP)",
+      TG_VAL_TOTL_GD_ZS: "Merchandise trade (% of GDP)",
+      NE_TRD_GNFS_ZS: "Trade (% of GDP)",
+      SH_H2O_BASW_ZS: "Access to clean water (% of total population)",
+      SH_STA_BASS_ZS: "Sanitation facilities access (% of total population)",
+      EG_USE_ELEC_KH_PC: "Electric power consumption (kWh per capita)",
       IT_CEL_SETS_P2: "Mobile cellular subscriptions (per 100 people)",
-      SP_URB_GROW: "Urban population growth"
+      SP_URB_GROW: "Urban population growth (annual %)",
     },
     country: {
       afg: {
@@ -741,10 +749,6 @@ export default {
         name: 'Syria',
         capital: 'Damascus'
       },
-      twn: {
-        name: 'Taiwan',
-        capital: 'Taipei'
-      },
       tjk: {
         name: 'Tajikistan',
         capital: 'Dushanbe'
@@ -828,6 +832,10 @@ export default {
       yem: {
         name: 'Yemen',
         capital: "Sana'a"
+      },
+      xkx: {
+        name: 'Kosovo',
+        capital: 'Pristina'
       },
       zmb: {
         name: 'Zambia',

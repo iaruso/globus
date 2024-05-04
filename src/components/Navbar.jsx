@@ -2,8 +2,9 @@ import React, { useRef, useState, useEffect } from 'react';
 import Select from 'react-dropdown-select';
 import { useTranslation } from 'react-i18next';
 import countriesDataJSON from '../assets/countries.json';
-import categoriesDataJSON from '../assets/categories.json';
+import indicatorsDataJSON from '../assets/indicators.json';
 import TranslateDropdown from './TranslateDropdown';
+import gsap from 'gsap';
 import Logo from './icons/Logo';
 import Light from './icons/Light';
 import Dark from './icons/Dark';
@@ -11,7 +12,7 @@ import Language from './icons/Language';
 import Info from './icons/Info';
 import Clear from './icons/Clear';
 
-const Navbar = ({ toggleTheme, theme, selectedCountry, onSelectedInfo }) => {
+const Navbar = ({ toggleTheme, theme, selectedCountry, onSelectedInfo, searching, closed }) => {
   const { t, i18n } = useTranslation();
   const selectRef = useRef(null);
   const [allOptionsData, setAllOptions] = useState([]);
@@ -34,15 +35,15 @@ const Navbar = ({ toggleTheme, theme, selectedCountry, onSelectedInfo }) => {
       label: t(countryData.name)
     }));
 
-    const categoriesData = Object.entries(categoriesDataJSON.categoriesCollection).map(([category, categoryData]) => {
-      const value = category.replace(/_/g, '.');
+    const indicatorsData = Object.entries(indicatorsDataJSON.indicatorsCollection).map(([indicator, indicatorData]) => {
+      const value = indicator.replace(/_/g, '.');
       return {
         value,
-        label: t(categoryData)
+        label: t(indicatorData)
       };
     });
 
-    const allOptionsData = [...categoriesData, ...countriesData,];
+    const allOptionsData = [...indicatorsData, ...countriesData,];
 
     setAllOptions(allOptionsData);
   }, [t]);
@@ -130,12 +131,15 @@ const Navbar = ({ toggleTheme, theme, selectedCountry, onSelectedInfo }) => {
   };
 
   useEffect(() => {
+    closed && clearAll();
+  }, [closed]);
+
+  useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.key === 'Enter') {
         const input = document.querySelector('.react-dropdown-select-input');
         const select = document.querySelector('.react-dropdown-select');
         const navButtons = document.querySelectorAll('nav button');
-        console.log(selectFlag);
         const isNavButtonFocused = Array.from(navButtons).some(button => button === document.activeElement);
         if (input && !isNavButtonFocused && document.activeElement !== input && select && !selectFlag) {
           select.click();
@@ -150,14 +154,19 @@ const Navbar = ({ toggleTheme, theme, selectedCountry, onSelectedInfo }) => {
     };
   }, [selectFlag]);
 
+  useEffect(() => {
+    gsap.fromTo('.opacity-box', { opacity: 2}, { opacity: 0, duration: 1 }); /* Lags a bit, so opacity must be over 1 */
+  }, [i18n.language, theme]);
+
   return (
-    <nav className='loading-test'>
+    <nav>
       <div className='logo-area'>
         <Logo className={'globus-logo'} />
         <h1 className='logo'>{t('app')}</h1>
       </div>
       <div className='search-area'>
         <Select
+          disabled={searching}
           ref={selectRef}
           key={selectKey}
           options={allOptionsData}
@@ -193,7 +202,7 @@ const Navbar = ({ toggleTheme, theme, selectedCountry, onSelectedInfo }) => {
         <button className='info' ref={infoButtonRef} onClick={(e) => { setOpenInfoContainer((prev) => !prev); e.stopPropagation();}}>
           <Info />
         </button>
-        {openInfoContainer && <div ref={infoContentRef} className='info-container'>
+        {openInfoContainer && <div ref={infoContentRef} className='info-box'>
           <p>{t('navbar.info.description')}</p>
           <a href='https://github.com/iaruso/globus' target='_blank'>{t('navbar.info.sourceCode')}</a>
         </div>}

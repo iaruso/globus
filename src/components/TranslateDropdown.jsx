@@ -4,8 +4,8 @@ import { useTranslation } from 'react-i18next';
 const TranslateDropdown = forwardRef(({ setOpenTranslateDropdown }, ref) => {
   const { t, i18n } = useTranslation();
   const [activeLanguage, setActiveLanguage] = useState(i18n.language);
-  const [selectedOptionIndex, setSelectedOptionIndex] = useState(0); // Initialize with 0
-  const [initialRender, setInitialRender] = useState(true); // Track initial render
+  const [selectedOptionIndex, setSelectedOptionIndex] = useState(0);
+  const [initialRender, setInitialRender] = useState(true);
 
   useEffect(() => {
     setActiveLanguage(i18n.language);
@@ -13,10 +13,9 @@ const TranslateDropdown = forwardRef(({ setOpenTranslateDropdown }, ref) => {
 
   useEffect(() => {
     if (initialRender) {
-      // Find the index of the active language and set selectedOptionIndex
       const index = Object.values(languages).findIndex(language => language === activeLanguage);
       setSelectedOptionIndex(index);
-      setInitialRender(false); // Set initialRender to false after setting selectedOptionIndex
+      setInitialRender(false);
     }
   }, [activeLanguage, initialRender]);
 
@@ -33,6 +32,7 @@ const TranslateDropdown = forwardRef(({ setOpenTranslateDropdown }, ref) => {
   const handleLanguageChange = (languageCode) => {
     i18n.changeLanguage(languageCode);
     setActiveLanguage(languageCode);
+    setOpenTranslateDropdown(false);
   };
 
   const handleKeyDown = (event) => {

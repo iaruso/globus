@@ -1,7 +1,3 @@
-@media (prefers-reduced-motion: no-preference) {
-  
-}
-
 .container {
   width: 100%;
   flex: 1;
@@ -17,7 +13,19 @@
   cursor: grab !important;
 }
 
-.country-button {
+.globe-container {
+  height: 100%;
+}
+
+.globe-container.disabled {
+  display: none;
+}
+
+.globe-container.disabled #globe-visualizer canvas {
+  cursor: wait !important;
+}
+
+.country-button, .country-button-indicator {
   cursor: pointer;
   pointer-events: auto;
   color: var(--globe-button-text-color) !important;
@@ -34,9 +42,33 @@
   transition: background-color .2s ease-in-out;
 }
 
-.country-button:hover {
+.country-button-indicator {
+  cursor: auto !important;
+  flex-direction: column;
+}
+
+.country-button-indicator span {
+  font-size: 0.625rem;
+  font-weight: 600;
+  color: var(--text-color);
+  display: none;
+}
+
+.country-button-indicator:hover {
+  height: auto;
+}
+
+.country-button-indicator:hover span, .country-button-indicator:focus-visible span {
+  display: block;
+}
+
+.country-button:hover, .country-button.disabled, .country-button-indicator:hover {
   background-color: var(--globe-button-bg-hover);
   z-index: 200 !important;
+}
+
+.country-button.disabled {
+  cursor: not-allowed;
 }
 
 /* Navbar */
@@ -48,7 +80,7 @@ nav {
   transform-style: preserve-3d;
 }
 
-nav.loading-test:before {
+/*nav.loading-nav:before {
   content: "";
   position: absolute;
   inset: 0;
@@ -70,7 +102,7 @@ nav.loading-test:before {
   100% {
     background-position: 0% 0%;
   }
-}
+}*/
 
 nav {
   height: 3rem;
@@ -178,6 +210,7 @@ nav .react-dropdown-select .clear-select {
   border: none;
   outline: none;
   background-color: var(--container-bg);
+  padding: 0; /* Apply always this for iOS - buttons with svg */
 }
 
 nav .react-dropdown-select .clear-select.hidden {
@@ -236,7 +269,8 @@ nav .react-dropdown-select-item {
   font-weight: 500;
   color: var(--text-color);
   font-family: 'Manrope', sans-serif;
-  min-height: 2rem;
+  height: 2rem;
+  word-break: normal;
   display: flex;
   align-items: center;  
 }
@@ -255,6 +289,10 @@ nav .react-dropdown-select-item:hover, nav .react-dropdown-select-item:focus, na
   background: var(--input-hover-bg) !important;
 }
 
+.react-dropdown-select-item-selected {
+  pointer-events: none !important;
+}
+
 nav .react-dropdown-select-item-selected, .translate-dropdown-item.active {
   background-color: var(--input-selected-bg) !important;
   border-color: var(--border-color) !important;
@@ -267,7 +305,7 @@ nav .react-dropdown-select-input {
   font-weight: 500;
   color: var(--placeholder-color);
   font-family: 'Manrope', sans-serif;
-  width: fit-content;
+  min-width: 2rem;
 }
 
 nav .react-dropdown-select-input:placeholder-shown {
@@ -432,13 +470,111 @@ nav > button:focus-visible, nav button.translate:focus-visible, nav button.info:
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  width: calc(100% - 50vw);
-  max-height: 24rem;
-  bottom: calc(3rem + var(--border-width));
-  padding: 1rem;
+  height: 24rem;
+  min-height: 10rem;
+  bottom: 3rem;
+  padding: 0.5rem;
   background-color: var(--container-bg);
   border-radius: 0.25rem;
   border: var(--border-width) solid var(--border-color);
+  overflow: auto;
+  transition: height 0.6s ease-in-out;
+  width: calc(100% - 50vw);
+}
+
+.info-container.collapsed {
+  height: 10.5rem;
+}
+
+.info-container.loading {
+  height: fit-content;
+  min-height: unset;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.placeholder {
+  background-color: var(--loading-shadow-light);
+  border-radius: 0.25rem;
+}
+
+@keyframes placeHolderShimmer{
+  0% {
+    background-position: -40vw 0
+  }
+  100% {
+    background-position: 40vw 0
+  }
+}
+
+.animated-background {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: var(--loading-shadow-light);
+  background: linear-gradient(to right, var(--loading-shadow-light) 10%, var(--loading-shadow) 20%, var(--loading-shadow-light) 30%);
+  height: 100%;
+  background-size: 60vw 10vh;
+  border-radius: 0.25rem;
+  position: relative;
+}
+
+.loading-country, .loading-indicator {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.loading-country-header {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0.5rem;
+}
+
+.loading-country-header .flag {
+  width: 4rem;
+  height: 2.5rem;
+}
+
+.loading-country-header .loading-country-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.loading-country-details .h1 {
+  width: 4rem;
+  height: 1.25rem;
+}
+
+.loading-country-details .h2 {
+  width: 2.5rem;
+  height: 0.75rem;
+}
+
+.loading-country .table-placeholder, .loading-indicator .table-placeholder {
+  width: 100%;
+  height: 1.5rem;
+}
+
+.loading-table {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: fit-content;
+}
+
+.loading-indicator .h1 {
+  width: 50%;
+  height: 1.5rem;
+}
+
+.info-container.collapsed .button-collapse svg {
+  transform: rotate(180deg);
 }
 
 .country-info {
@@ -447,9 +583,18 @@ nav > button:focus-visible, nav button.translate:focus-visible, nav button.info:
   gap: 0.5rem;
 }
 
+.country-info img {
+  height: 4rem;
+}
+
+.country-info img.hidden {
+  display: none;
+}
+
 .country-details {
   display: flex;
   flex-direction: column;
+  margin-top: -0.33rem;
 }
 
 .country-details h1 {
@@ -460,7 +605,7 @@ nav > button:focus-visible, nav button.translate:focus-visible, nav button.info:
 }
 
 .country-details h2 {
-  font-size: 1rem;
+  font-size: 0.75rem;
   font-weight: 500;
   color: var(--text-color);
   font-family: 'Manrope', sans-serif;
@@ -476,6 +621,15 @@ nav > button:focus-visible, nav button.translate:focus-visible, nav button.info:
   font-weight: 600;
   color: var(--text-color);
   font-family: 'Manrope', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.indicator-info .indicator-info-date {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--placeholder-color);
 }
 
 .info-container .table {
@@ -495,7 +649,7 @@ nav > button:focus-visible, nav button.translate:focus-visible, nav button.info:
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
-  height: 2rem;
+  min-height: 2rem;
   align-items: center;
   border-radius: 0.25rem 0.25rem 0 0;
   border-bottom: var(--border-width) solid var(--border-color);
@@ -508,8 +662,32 @@ nav > button:focus-visible, nav button.translate:focus-visible, nav button.info:
   font-weight: 600;
   color: var(--text-color);
   font-family: 'Manrope', sans-serif;
-  height: 2rem;
+  min-height: 2rem;
+  height: 100%;
   padding: 0.25rem 0.5rem;
+  gap: 0.25rem;
+}
+
+.info-container .table-indicator .table-header > div {
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.info-container .table-header > div svg {
+  height: 0.75rem;
+  width: 0.75rem;
+  fill: var(--icon-color);
+  display: none;
+}
+
+.info-container .table-header > div.asc svg {
+  transform: rotate(-90deg);
+  display: block;
+}
+
+.info-container .table-header > div.desc svg {
+  transform: rotate(90deg);
+  display: block;
 }
 
 .info-container .table-header > div:first-child {
@@ -526,8 +704,8 @@ nav > button:focus-visible, nav button.translate:focus-visible, nav button.info:
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
-  min-height: 1.5rem;
-  height: 2rem;
+  min-height: 2rem;
+  height: auto;
   align-items: center;
 }
 
@@ -537,6 +715,44 @@ nav > button:focus-visible, nav button.translate:focus-visible, nav button.info:
 
 .info-container .table-row > div:first-child {
   border-right: var(--border-width) solid var(--border-color);
+}
+
+.indicator-container-header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.indicator-container-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.indicator-container-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  width: 2rem;
+  background-color: var(--container-bg);
+  border: var(--border-width) solid var(--border-color);
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.indicator-container-buttons button svg {
+  height: 1rem;
+  width: 1rem;
+  fill: var(--icon-color);
+  transition: transform 0.2s ease-in-out;
+}
+
+.indicator-container-buttons button:hover {
+  background-color: var(--input-hover-bg);
 }
 
 @media screen and (max-width: 1440px) {
@@ -573,7 +789,22 @@ nav > button:focus-visible, nav button.translate:focus-visible, nav button.info:
     font-size: 0.625rem;
   }
 
+  nav .react-dropdown-select-item {
+    height: fit-content !important;
+    padding: 0.5rem !important;
+  }
+
   .react-dropdown-select-content > :not(:first-child).react-dropdown-select-input {
     display: none;
+  }
+
+  .select-enter {
+    display: none;
+  }
+
+  .indicator-info h1 {
+    flex-direction: column;
+    align-items: start;
+    font-size: 1rem;
   }
 }

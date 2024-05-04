@@ -92,7 +92,6 @@ div#root.dark {
   --globe-button-text-color: var(--ash);
 }
 
-
 #root {
   display: flex;
   flex-direction: column;
@@ -112,6 +111,18 @@ body {
   height: 100dvh;
   width: 100dvw;
   margin: 0;
+  background-color: var(--container-bg);
+}
+
+.opacity-box { /* GSAP not so accurate for some reason */
+  background-color: var(--container-bg);
+  opacity: 0;
+  height: 100dvh;
+  width: 100dvw;
+  position: fixed;
+  inset: 0;
+  z-index: 99999999999;
+  pointer-events: none;
 }
 
 button:focus,

@@ -14,43 +14,51 @@ export default {
         ja: 'Japonais'
       },
       info: {
-        description: 'Explorez les statistiques entre les différents pays (selon les données de la Banque mondiale).',
+        description: 'Explorez les statistiques entre les différents pays (selon les données du The World Bank Group).',
         sourceCode: 'Code source'
       }
     },
-    categories: {
-      AG_SRF_TOTL_K2: 'Superficie terrestre',
+    info: {
+      country: 'Pays',
+      indicator: 'Indicateur',
+      value: 'Valeur',
+      million: 'M',
+      billion: 'Md',
+      trillion: 'T'
+    },
+    indicators: {
+      AG_SRF_TOTL_K2: 'Superficie terrestre (km²)',
       SP_POP_TOTL: 'Population totale',
-      SP_POP_GROW: 'Croissance démographique',
-      EN_POP_DNST: 'Densité de population',
-      NY_GDP_MKTP_CD: 'PIB',
-      NY_GDP_MKTP_KD_ZG: 'Taux de croissance du PIB',
-      NY_GDP_PCAP_CD: 'PIB par habitant',
-      NE_GDI_TOTL_ZS: 'Formation brute de capital',
-      GC_TAX_TOTL_GD_ZS: 'Recettes fiscales',
-      SL_UEM_TOTL_NE_ZS: 'Taux de chômage (estimation nationale)',
-      SI_POV_NAHC: 'Pauvreté (aux seuils de pauvreté nationaux)',
-      SP_DYN_LE00_IN: 'Espérance de vie à la naissance',
-      SE_ADT_LITR_ZS: 'Taux d\'alphabétisation (adultes)',
-      SH_STA_BRTC_ZS: 'Naissances assistées par un personnel de santé qualifié',
+      SP_POP_GROW: 'Croissance démographique (% annuel)',
+      EN_POP_DNST: 'Densité de population (personnes par km²)',
+      NY_GDP_MKTP_CD: 'PIB (USD courants)',
+      NY_GDP_MKTP_KD_ZG: 'Taux de croissance du PIB (% annuel)',
+      NY_GDP_PCAP_CD: 'PIB par habitant (USD courants)',
+      NE_GDI_TOTL_ZS: 'Formation brute de capital (% du PIB)',
+      GC_TAX_TOTL_GD_ZS: 'Recettes fiscales (% du PIB)',
+      SL_UEM_TOTL_NE_ZS: 'Taux de chômage (estimation nationale en %)',
+      SI_POV_NAHC: 'Pauvreté (aux seuils de pauvreté nationaux en %)',
+      SP_DYN_LE00_IN: 'Espérance de vie à la naissance (années)',
+      SE_ADT_LITR_ZS: 'Taux d\'alphabétisation (adultes en %)',
+      SH_STA_BRTC_ZS: 'Naissances assistées par un personnel de santé qualifié (% du total)',
       SH_DYN_MORT: 'Taux de mortalité infantile (pour 1000 naissances)',
-      SP_DYN_CONU_ZS: 'Prévalence contraceptive',
-      SP_DYN_TFRT_IN: 'Taux de fécondité',
-      SE_PRM_CMPT_ZS: 'Taux de réussite de l\'enseignement primaire',
-      SE_ENR_PRSC_FM_ZS: 'Inscription à l\'école',
-      EG_USE_PCAP: 'Utilisation d\'énergie par habitant',
-      EN_ATM_CO2E_PC: 'Émissions de CO2 par habitant',
-      AG_LND_FRST_K2: 'Superficie forestière',
-      ER_PTD_TOTL_ZS: 'Aires protégées terrestres et marines',
-      NE_EXP_GNFS_ZS: 'Exportations de biens et services',
-      NE_IMP_GNFS_ZS: 'Importations de biens et services',
-      TG_VAL_TOTL_GD_ZS: 'Commerce de marchandises',
-      NE_TRD_GNFS_ZS: 'Commerce',
-      SH_H2O_BASW_ZS: 'Accès à l\'eau potable',
-      SH_STA_BASS_ZS: 'Accès aux installations sanitaires',
-      EG_USE_ELEC_KH_PC: 'Consommation d\'électricité par habitant',
+      SP_DYN_CONU_ZS: 'Prévalence contraceptive (% de femmes âgées de 15 à 49 ans)',
+      SP_DYN_TFRT_IN: 'Taux de fécondité (totale)',
+      SE_PRM_CMPT_ZS: 'Taux de réussite de l\'enseignement primaire (en %)',
+      SE_ENR_PRSC_FM_ZS: 'Inscription à l\'école (IPS)',
+      EG_USE_PCAP: 'Utilisation d\'énergie par habitant (kg d\'équivalent pétrole par habitant)',
+      EN_ATM_CO2E_PC: 'Émissions de CO2 par habitant (en tonnes métriques)',
+      AG_LND_FRST_K2: 'Superficie forestière (km²)',
+      ER_PTD_TOTL_ZS: 'Aires protégées terrestres et marines (% du total)',
+      NE_EXP_GNFS_ZS: 'Exportations de biens et services (% du PIB)',
+      NE_IMP_GNFS_ZS: 'Importations de biens et services (% du PIB)',
+      TG_VAL_TOTL_GD_ZS: 'Commerce de marchandises (% du PIB)',
+      NE_TRD_GNFS_ZS: 'Commerce (% du PIB)',
+      SH_H2O_BASW_ZS: 'Accès à l\'eau potable (% de la population)',
+      SH_STA_BASS_ZS: 'Accès aux installations sanitaires (% de la population)',
+      EG_USE_ELEC_KH_PC: 'Consommation d\'électricité par habitant (kWh)',
       IT_CEL_SETS_P2: 'Abonnements téléphoniques mobiles (par 100 personnes)',
-      SP_URB_GROW: 'Croissance de la population urbaine'
+      SP_URB_GROW: 'Croissance de la population urbaine (% annuel)',
     },
     country: {
       afg: {
@@ -741,10 +749,6 @@ export default {
         name: 'Syrie',
         capital: 'Damas'
       },
-      twn: {
-        name: 'Taïwan',
-        capital: 'Taipei'
-      },
       tjk: {
         name: 'Tadjikistan',
         capital: 'Douchanbé'
@@ -828,6 +832,10 @@ export default {
       yem: {
         name: 'Yémen',
         capital: 'Sanaa'
+      },
+      xkx: {
+        name: 'Kosovo',
+        capital: 'Pristina'
       },
       zmb: {
         name: 'Zambie',

@@ -14,43 +14,51 @@ export default {
         ja: 'Japanisch'
       },
       info: {
-        description: 'Erkunden Sie Statistiken zwischen den verschiedenen Ländern (nach Daten der Weltbank).',
+        description: 'Erkunden Sie Statistiken zwischen den verschiedenen Ländern (basierend auf Daten der The World Bank Group).',
         sourceCode: 'Quellcode'
       }
     },
-    categories: {
-      AG_SRF_TOTL_K2: 'Oberfläche',
-      SP_POP_TOTL: 'Gesamtbevölkerung',
-      SP_POP_GROW: 'Bevölkerungswachstum',
-      EN_POP_DNST: 'Bevölkerungsdichte',
-      NY_GDP_MKTP_CD: 'Bruttoinlandsprodukt (BIP)',
-      NY_GDP_MKTP_KD_ZG: 'BIP-Wachstumsrate',
-      NY_GDP_PCAP_CD: 'BIP pro Kopf',
-      NE_GDI_TOTL_ZS: 'Bruttoinlandsinvestitionen',
-      GC_TAX_TOTL_GD_ZS: 'Steuereinnahmen',
-      SL_UEM_TOTL_NE_ZS: 'Arbeitslosigkeit (nationale Schätzung)',
-      SI_POV_NAHC: 'Armut (nationale Armutsquoten)',
-      SP_DYN_LE00_IN: 'Lebenserwartung bei Geburt',
-      SE_ADT_LITR_ZS: 'Lese- und Schreibfähigkeit (Erwachsene)',
-      SH_STA_BRTC_ZS: 'Geburten betreut von geschultem medizinischem Personal',
-      SH_DYN_MORT: 'Kindersterblichkeitsrate (pro 1000 Geburten)',
-      SP_DYN_CONU_ZS: 'Verbreitung von Verhütungsmitteln',
-      SP_DYN_TFRT_IN: 'Geburtenrate',
-      SE_PRM_CMPT_ZS: 'Primarstufe Abschlussquote',
-      SE_ENR_PRSC_FM_ZS: 'Einschulungsrate',
-      EG_USE_PCAP_KG_OE: 'Energieverbrauch',
-      EN_ATM_CO2E_PC: 'CO2-Emissionen',
-      AG_LND_FRST_K2: 'Waldfläche (in Quadratkilometern)',
-      ER_PTD_TOTL_ZS: 'Terrestrische und marine Schutzgebiete',
-      NE_EXP_GNFS_ZS: 'Exporte von Waren und Dienstleistungen',
-      NE_IMP_GNFS_ZS: 'Importe von Waren und Dienstleistungen',
-      TG_VAL_TOTL_GD_ZS: 'Handel mit Waren',
-      NE_TRD_GNFS_ZS: 'Handel',
-      SH_H2O_BASW_ZS: 'Zugang zu sauberem Wasser',
-      SH_STA_BASS_ZS: 'Zugang zu Sanitäranlagen',
-      EG_USE_ELEC_KH_PC: 'Stromverbrauch',
-      IT_CEL_SETS_P2: 'Mobile Telefonanschlüsse (pro 100 Personen)',
-      SP_URB_GROW: 'Wachstum der städtischen Bevölkerung'
+    info: {
+      country: 'Land',
+      indicator: 'Indikator',
+      value: 'Wert',
+      million: 'Mio',
+      billion: 'Mrd',
+      trillion: 'Bio'
+    },
+    indicators: {
+      AG_SRF_TOTL_K2: "Fläche (km²)",
+      SP_POP_TOTL: "Gesamtbevölkerung",
+      SP_POP_GROW: "Bevölkerungswachstum (jährlich %)",
+      EN_POP_DNST: "Bevölkerungsdichte (Einwohner pro km²)",
+      NY_GDP_MKTP_CD: "BIP (aktuelle US-Dollar)",
+      NY_GDP_MKTP_KD_ZG: "BIP-Wachstumsrate (jährlich %)",
+      NY_GDP_PCAP_CD: "BIP pro Kopf (aktuelle US-Dollar)",
+      NE_GDI_TOTL_ZS: "Bruttoanlageinvestitionen (% des BIP)",
+      GC_TAX_TOTL_GD_ZS: "Steuereinnahmen (% des BIP)",
+      SL_UEM_TOTL_NE_ZS: "Arbeitslosigkeit (nationale Schätzung in %)",
+      SI_POV_NAHC: "Armut (an nationalen Armutszahlen in %)",
+      SP_DYN_LE00_IN: "Lebenserwartung bei der Geburt (Jahre)",
+      SE_ADT_LITR_ZS: "Alphabetisierungsrate (Erwachsene in %)",
+      SH_STA_BRTC_ZS: "Geburten betreut von geschultem medizinischem Personal (% des Gesamts)",
+      SH_DYN_MORT: "Kindersterblichkeitsrate (pro 1000)",
+      SP_DYN_CONU_ZS: "Verbreitung von Verhütungsmitteln (% Frauen im Alter von 15-49)",
+      SP_DYN_TFRT_IN: "Geburtenrate (insgesamt)",
+      SE_PRM_CMPT_ZS: "Abschlussrate der Primarstufe (in %)",
+      SE_ENR_PRSC_FM_ZS: "Einschulungsrate (Geschlechterparitätsindex)",
+      EG_USE_PCAP_KG_OE: "Energieverbrauch pro Kopf (kg Öläquivalent)",
+      EN_ATM_CO2E_PC: "CO2-Emissionen pro Kopf (Metrische Tonnen pro Kopf)",
+      AG_LND_FRST_K2: "Waldfläche (km²)",
+      ER_PTD_TOTL_ZS: "Geschützte Land- und Meeresgebiete (% der Gesamtfläche)",
+      NE_EXP_GNFS_ZS: "Exporte von Waren und Dienstleistungen (% des BIP)",
+      NE_IMP_GNFS_ZS: "Importe von Waren und Dienstleistungen (% des BIP)",
+      TG_VAL_TOTL_GD_ZS: "Warenhandel (% des BIP)",
+      NE_TRD_GNFS_ZS: "Handel (% des BIP)",
+      SH_H2O_BASW_ZS: "Zugang zu sauberem Wasser (% der Gesamtbevölkerung)",
+      SH_STA_BASS_ZS: "Zugang zu Sanitäranlagen (% der Gesamtbevölkerung)",
+      EG_USE_ELEC_KH_PC: "Stromverbrauch (kWh pro Kopf)",
+      IT_CEL_SETS_P2: "Mobile Handyverträge (pro 100 Personen)",
+      SP_URB_GROW: "Wachstum der städtischen Bevölkerung (jährlich %)"
     },
     country: {
       afg: {
@@ -741,10 +749,6 @@ export default {
         name: 'Syrien',
         capital: 'Damaskus'
       },
-      twn: {
-        name: 'Taiwan',
-        capital: 'Taipeh'
-      },
       tjk: {
         name: 'Tadschikistan',
         capital: 'Duschanbe'
@@ -828,6 +832,10 @@ export default {
       yem: {
         name: 'Jemen',
         capital: "Sana'a"
+      },
+      xkx: {
+        name: 'Kosovo',
+        capital: 'Pristina'
       },
       zmb: {
         name: 'Sambia',
