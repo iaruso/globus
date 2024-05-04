@@ -23,4 +23,4 @@
 
 ### [Explore it now!](https://globus-three-js.vercel.app/)
 
-*This project was made with help of [The World Bank Group API](https://datahelpdesk.worldbank.org/knowledgebase/articles/1886674-new-features-and-enhancements-in-the-v2-api) and [three-globe](https://github.com/vasturiano/three-globe) package.*
+*This project was made with help of [The World Bank Group API](https://datahelpdesk.worldbank.org/knowledgebase/articles/1886674-new-features-and-enhancements-in-the-v2-api), [three-globe](https://github.com/vasturiano/three-globe) and [react-dropdown-select](https://www.npmjs.com/package/react-dropdown-select)(customized) packages.*
