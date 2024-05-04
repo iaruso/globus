@@ -40,6 +40,7 @@
   font-weight: 500;
   font-size: 0.625rem;
   transition: background-color .2s ease-in-out;
+  font-family: 'Manrope', sans-serif;
 }
 
 .country-button-indicator {
