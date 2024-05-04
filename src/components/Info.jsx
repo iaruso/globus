@@ -38,7 +38,7 @@ const Info = ({ selectedInfo, onSearching, onClose, searching }) => {
     if (ignore) {
       return;
     }
-    const newSortOrder = sortOrderByName === 'asc' ? 'desc' : 'asc';
+    const newSortOrder = value;
     setSortOrderByName(newSortOrder);
     setSortOrderByValue(null);
   };
@@ -56,7 +56,7 @@ const Info = ({ selectedInfo, onSearching, onClose, searching }) => {
 
   const setDefaultOrder = (val = true) => {
     setSortOrderByValue(null);
-    sortIndicatorDataByName(sortOrderByName === 'desc' ? 'asc' : 'desc', !val);
+    sortIndicatorDataByName(sortOrderByName === null ? 'asc' : sortOrderByName === 'desc' ? 'asc' : 'desc', !val);
   };
 
   useEffect(() => {
@@ -95,6 +95,7 @@ const Info = ({ selectedInfo, onSearching, onClose, searching }) => {
           setInfoValue(null);
         } else {
           const indicatorValue = selectedInfo[0]?.value;
+          setSortOrderByName(sortOrderByNameInitial);
           setInfoValue(indicatorValue);
           fetchIndicatorData(indicatorValue);
           setLoading(true);
@@ -110,7 +111,7 @@ const Info = ({ selectedInfo, onSearching, onClose, searching }) => {
     try {
       const locale = i18n.language.split('-')[0];
       const indicatorString = nullIndicators.length > 0 ? nullIndicators.join(';') : 'AG.SRF.TOTL.K2;SP.POP.TOTL;SP.POP.GROW;EN.POP.DNST;NY.GDP.MKTP.CD;NY.GDP.MKTP.KD.ZG;NY.GDP.PCAP.CD;NE.GDI.TOTL.ZS;GC.TAX.TOTL.GD.ZS;SL.UEM.TOTL.NE.ZS;SI.POV.NAHC;SP.DYN.LE00.IN;SE.ADT.LITR.ZS;SH.STA.BRTC.ZS;SH.DYN.MORT;SP.DYN.CONU.ZS;SP.DYN.TFRT.IN;SE.PRM.CMPT.ZS;SE.ENR.PRSC.FM.ZS;EG.USE.PCAP.KG.OE;EN.ATM.CO2E.PC;AG.LND.FRST.K2;ER.PTD.TOTL.ZS;NE.EXP.GNFS.ZS;NE.IMP.GNFS.ZS;TG.VAL.TOTL.GD.ZS;NE.TRD.GNFS.ZS;SH.H2O.BASW.ZS;SH.STA.BASS.ZS;EG.USE.ELEC.KH.PC;IT.CEL.SETS.P2;SP.URB.GROW';
-      const response = await axios.get(`http://api.worldbank.org/v2/${locale}/country/${value}/indicator/${indicatorString}?source=2&format=json&page=1&date=${year}`);
+      const response = await axios.get(`https://api.worldbank.org/v2/${locale}/country/${value}/indicator/${indicatorString}?source=2&format=json&page=1&date=${year}`);
       const newData = response.data[1];
       const newNullIndicators = newData.filter(item => item.value === null).map(item => item.indicator.id);
       if (newNullIndicators.length > 0 && year > currentYear - 10) {
@@ -133,7 +134,7 @@ const Info = ({ selectedInfo, onSearching, onClose, searching }) => {
       let allData = [];
       let currentPage = 1;
       while (true) {
-        const response = await axios.get(`http://api.worldbank.org/v2/${locale}/country/${iso2String}/indicator/${indicator}?format=json&dataformat=list&date=${year}&page=${currentPage}`);
+        const response = await axios.get(`https://api.worldbank.org/v2/${locale}/country/${iso2String}/indicator/${indicator}?format=json&dataformat=list&date=${year}&page=${currentPage}`);
         const newData = response.data[1];
         allData.push(...newData);
         if (newData.length < 50) {
