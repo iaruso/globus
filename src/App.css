@@ -278,7 +278,7 @@ nav .react-dropdown-select-item {
   font-weight: 500;
   color: var(--text-color);
   font-family: 'Manrope', sans-serif;
-  height: 2rem;
+  min-height: 2rem;
   word-break: normal;
   display: flex;
   align-items: center;  
