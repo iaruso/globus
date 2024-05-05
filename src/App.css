@@ -68,6 +68,14 @@
   z-index: 200 !important;
 }
 
+.country-button:focus-visible, .country-button-indicator:focus-visible {
+  background-color: var(--input-hover-bg);
+  border-color: var(--outline-color);
+  outline: none !important;
+  z-index: 200 !important;
+  height: auto;
+}
+
 .country-button.disabled {
   cursor: not-allowed;
 }
@@ -656,42 +664,53 @@ nav > button:focus-visible, nav button.translate:focus-visible, nav button.info:
   border-bottom: var(--border-width) solid var(--border-color);
 }
 
-.info-container .table-header > div, .info-container .table-row > div {
+.info-container .table-header > div, .info-container .table-header > button {
+  background-color: var(--table-header-bg);
+}
+
+.info-container .table-header > div, .info-container .table-header > button, .info-container .table-row > div {
   display: flex;
   align-items: center;
   font-size: 0.75rem;
   font-weight: 600;
   color: var(--text-color);
   font-family: 'Manrope', sans-serif;
+  border: none;
   min-height: 2rem;
   height: 100%;
   padding: 0.25rem 0.5rem;
   gap: 0.25rem;
 }
 
-.info-container .table-indicator .table-header > div {
+.info-container .table-indicator .table-header > button{
   cursor: pointer;
   justify-content: space-between;
 }
 
-.info-container .table-header > div svg {
+.info-container .table-header > button:focus-visible {
+  background-color: var(--input-selected-bg);
+  border-color: var(--outline-color);
+  outline: none !important;
+}
+
+.info-container .table-header > button svg {
   height: 0.75rem;
   width: 0.75rem;
   fill: var(--icon-color);
   display: none;
 }
 
-.info-container .table-header > div.asc svg {
+.info-container .table-header > button.asc svg {
   transform: rotate(-90deg);
   display: block;
 }
 
-.info-container .table-header > div.desc svg {
+.info-container .table-header > button.desc svg {
   transform: rotate(90deg);
   display: block;
 }
 
-.info-container .table-header > div:first-child {
+.info-container .table-header > button:first-child {
   border-right: var(--border-width) solid var(--border-color);
 }
 
@@ -699,6 +718,12 @@ nav > button:focus-visible, nav button.translate:focus-visible, nav button.info:
   height: 0;
   flex: 1;
   overflow-y: auto;
+}
+
+.info-container .table-body:focus-visible {
+  outline: none;
+  border: solid var(--border-width) var(--border-color);
+  background-color: var(--input-selected-bg);
 }
 
 .info-container .table-row {
@@ -754,6 +779,12 @@ nav > button:focus-visible, nav button.translate:focus-visible, nav button.info:
 
 .indicator-container-buttons button:hover {
   background-color: var(--input-hover-bg);
+}
+
+.indicator-container-buttons button:focus-visible {
+  background-color: var(--input-hover-bg);
+  border-color: var(--outline-color);
+  outline: none !important;
 }
 
 @media screen and (max-width: 1440px) {

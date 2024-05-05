@@ -5,10 +5,11 @@
 
 ### Features
 - Filter data by country or indicator
-- Support for multiple languages
-- Toggle between dark and light modes
 - Interactive globe for selecting countries
 - View indicator data for each country
+- Support for multiple languages
+- Toggle between dark and light modes
+- Keyboard user-friendly
 
 > __Note__        
 > Some lagging may occur after multiple globe reloads.

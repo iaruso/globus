@@ -297,7 +297,7 @@ const Globe = ({ theme, onCountrySelect, selectedInfo, onSearching }) => {
         .htmlLng(([, d]) => parseFloat(d.coordinates[1]))
         .htmlAltitude(0.02)
         .htmlElement(([iso3, d]) => {
-          const el = document.createElement('a');
+          const el = document.createElement('button');
           el.innerHTML = t(d.name);
           el.classList.add('country-button');
           el.dataset.iso3 = iso3.toLowerCase();

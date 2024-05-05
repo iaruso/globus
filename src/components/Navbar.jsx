@@ -141,13 +141,15 @@ const Navbar = ({ toggleTheme, theme, selectedCountry, onSelectedInfo, searching
         const select = document.querySelector('.react-dropdown-select');
         const navButtons = document.querySelectorAll('nav button');
         const isNavButtonFocused = Array.from(navButtons).some(button => button === document.activeElement);
-        if (input && !isNavButtonFocused && document.activeElement !== input && select && !selectFlag) {
+        const isButtonFocused = document.activeElement.tagName.toLowerCase() === 'button';
+        
+        if (input && !isNavButtonFocused && !isButtonFocused && document.activeElement !== input && select && !selectFlag) {
           select.click();
           input.focus();
           event.preventDefault();
         }
       }
-    };
+    };    
     document.addEventListener('keydown', handleKeyDown);
     return () => {
       document.removeEventListener('keydown', handleKeyDown);

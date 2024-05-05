@@ -287,8 +287,8 @@ const Info = ({ selectedInfo, onSearching, onClose, searching }) => {
                 </div>
                 <div className='table table-indicator'>
                   <div className='table-header'>
-                    <div onClick={() => { const newValue = sortOrderByName === null ? 'asc' : sortOrderByName === 'asc' ? 'desc' : 'asc'; sortIndicatorDataByName(newValue);}} className={sortOrderByName}><span>{t('info.country')}</span><Sort/></div>
-                    <div onClick={sortIndicatorDataByValue} className={sortOrderByValue}><span>{t('info.value')}</span><Sort/></div>
+                    <button onClick={() => { const newValue = sortOrderByName === null ? 'asc' : sortOrderByName === 'asc' ? 'desc' : 'asc'; sortIndicatorDataByName(newValue);}} className={sortOrderByName}><span>{t('info.country')}</span><Sort/></button>
+                    <button onClick={sortIndicatorDataByValue} className={sortOrderByValue}><span>{t('info.value')}</span><Sort/></button>
                   </div>
                   <div className='table-body'>
                     {indicatorData.map((item, index) => (
