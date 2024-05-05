@@ -16,6 +16,11 @@ export default {
       info: {
         description: 'さまざまな国々間の統計を探索します（The World Bank Groupのデータに基づきます）。',
         sourceCode: 'ソースコード'
+      },
+      buttons: {
+        toggleTheme: 'テーマを切り替える',
+        translate: '言語を変更する',
+        info: '情報'
       }
     },
     info: {
@@ -24,7 +29,13 @@ export default {
       value: '値',
       million: '百万',
       billion: '十億',
-      trillion: '兆'
+      trillion: '兆',
+      buttons: {
+        collapse: '折りたたむ',
+        expand: '展開',
+        close: '閉じる',
+        order: '順序を変更'
+      }
     },
     indicators: {
       AG_SRF_TOTL_K2: "表面積（km²）",

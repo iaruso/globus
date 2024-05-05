@@ -16,6 +16,11 @@ export default {
       info: {
         description: 'Explore estatísticas entre os vários países (de acordo com os dados do World Bank Group).',
         sourceCode: 'Código fonte'
+      },
+      buttons: {
+        toggleTheme: 'Alternar tema',
+        translate: 'Traduzir',
+        info: 'Informação'
       }
     },
     info: {
@@ -24,7 +29,13 @@ export default {
       value: 'Valor',
       million: 'M',
       billion: 'B',
-      trillion: 'T'
+      trillion: 'T',
+      buttons: {
+        collapse: 'Colapsar',
+        expand: 'Expandir',
+        close: 'Fechar',
+        order: 'Ordenar'
+      }
     },
     indicators: {
       AG_SRF_TOTL_K2: 'Área de superfície (km²)',

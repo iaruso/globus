@@ -16,6 +16,11 @@ export default {
       info: {
         description: 'Explore statistics between the various countries (according to The World Bank Group data).',
         sourceCode: 'Source code'
+      },
+      buttons: {
+        toggleTheme: 'Toggle theme',
+        translate: 'Translate',
+        info: 'Info'
       }
     },
     info: {
@@ -24,7 +29,13 @@ export default {
       value: 'Value',
       million: 'M',
       billion: 'B',
-      trillion: 'T'
+      trillion: 'T',
+      buttons: {
+        collapse: 'Collapse',
+        expand: 'Expand',
+        close: 'Close',
+        order: 'Change order'
+      }
     },
     indicators: {
       AG_SRF_TOTL_K2: "Surface area (sq. km)",

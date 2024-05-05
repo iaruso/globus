@@ -252,8 +252,8 @@ const Info = ({ selectedInfo, onSearching, onClose, searching }) => {
                     </div>
                   </div>
                   <div className='indicator-container-buttons'>
-                    <button className='button-collapse' onClick={(e) => {setCollapsed(!collapsed); e.preventDefault();}}><Collapse/></button>
-                    <button onClick={(e) => {onClose(true); setClosed(true); e.preventDefault();}}><Clear/></button>
+                    <button className='button-collapse' onClick={(e) => {setCollapsed(!collapsed); e.preventDefault();}} aria-label={collapsed ? t('info.buttons.expand') : t('info.buttons.collapse')}><Collapse/></button>
+                    <button onClick={(e) => {onClose(true); setClosed(true); e.preventDefault();}} aria-label={t('info.buttons.close')}><Clear/></button>
                   </div>
                 </div>
                 <div className='table table-country'>
@@ -281,14 +281,14 @@ const Info = ({ selectedInfo, onSearching, onClose, searching }) => {
                     <h1>{getIndicatorName(infoValue)}<span className='indicator-info-date'>({currentYear})</span></h1>
                   </div>
                   <div className='indicator-container-buttons'>
-                    <button className='button-collapse' onClick={(e) => {setCollapsed(!collapsed); e.preventDefault();}}><Collapse/></button>
-                    <button onClick={(e) => {onClose(true); setClosed(true); e.preventDefault();}}><Clear/></button>
+                    <button className='button-collapse' onClick={(e) => {setCollapsed(!collapsed); e.preventDefault();}} aria-label={collapsed ? t('info.buttons.expand') : t('info.buttons.collapse')}><Collapse/></button>
+                    <button onClick={(e) => {onClose(true); setClosed(true); e.preventDefault();}} aria-label={t('info.buttons.close')}><Clear/></button>
                   </div>
                 </div>
                 <div className='table table-indicator'>
                   <div className='table-header'>
-                    <button onClick={() => { const newValue = sortOrderByName === null ? 'asc' : sortOrderByName === 'asc' ? 'desc' : 'asc'; sortIndicatorDataByName(newValue);}} className={sortOrderByName}><span>{t('info.country')}</span><Sort/></button>
-                    <button onClick={sortIndicatorDataByValue} className={sortOrderByValue}><span>{t('info.value')}</span><Sort/></button>
+                    <button onClick={() => { const newValue = sortOrderByName === null ? 'asc' : sortOrderByName === 'asc' ? 'desc' : 'asc'; sortIndicatorDataByName(newValue);}} className={sortOrderByName} aria-label={t('info.buttons.order')}><span>{t('info.country')}</span><Sort/></button>
+                    <button onClick={sortIndicatorDataByValue} className={sortOrderByValue} aria-label={t('info.buttons.order')}><span>{t('info.value')}</span><Sort/></button>
                   </div>
                   <div className='table-body'>
                     {indicatorData.map((item, index) => (

@@ -191,17 +191,17 @@ const Navbar = ({ toggleTheme, theme, selectedCountry, onSelectedInfo, searching
           </div>
         }
       </div>
-      <button onClick={toggleTheme}>
+      <button onClick={toggleTheme} aria-label={t('navbar.buttons.toggleTheme')}>
         {theme === 'dark' ? <Dark /> : <Light />}
       </button>
       <div className='custom-button'>
-        <button className='translate' ref={translateButtonRef} onClick={(e) => { setOpenTranslateDropdown((prev) => !prev); e.stopPropagation(); }}>
+        <button className='translate' ref={translateButtonRef} onClick={(e) => { setOpenTranslateDropdown((prev) => !prev); e.stopPropagation(); }} aria-label={t('navbar.buttons.translate')}>
           <Language />
         </button>
         {openTranslateDropdown && <TranslateDropdown setOpenTranslateDropdown={setOpenTranslateDropdown}  ref={translateDropdownRef} />}
       </div>
       <div className='custom-button'>
-        <button className='info' ref={infoButtonRef} onClick={(e) => { setOpenInfoContainer((prev) => !prev); e.stopPropagation();}}>
+        <button className='info' ref={infoButtonRef} onClick={(e) => { setOpenInfoContainer((prev) => !prev); e.stopPropagation();}} aria-label={t('navbar.buttons.info')}>
           <Info />
         </button>
         {openInfoContainer && <div ref={infoContentRef} className='info-box'>

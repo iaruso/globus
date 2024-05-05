@@ -16,6 +16,11 @@ export default {
       info: {
         description: 'Исследуйте статистику между различными странами (согласно данным World Bank Group).',
         sourceCode: 'Исходный код'
+      },
+      buttons: {
+        toggleTheme: 'Сменить тему',
+        translate: 'Сменить язык',
+        info: 'Информация'
       }
     },
     info: {
@@ -25,6 +30,12 @@ export default {
       million: 'Млн',
       billion: 'Млрд',
       trillion: 'Трлн',
+      buttons: {
+        collapse: 'Свернуть',
+        expand: 'Развернуть',
+        close: 'Закрыть',
+        order: 'Изменить порядок'
+      }
     },
     indicators: {
       AG_SRF_TOTL_K2: 'Площадь поверхности (кв. км)',

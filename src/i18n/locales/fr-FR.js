@@ -16,6 +16,11 @@ export default {
       info: {
         description: 'Explorez les statistiques entre les différents pays (selon les données du The World Bank Group).',
         sourceCode: 'Code source'
+      },
+      buttons: {
+        toggleTheme: 'Changer de thème',
+        translate: 'Changer de langue',
+        info: 'Informations'
       }
     },
     info: {
@@ -24,7 +29,13 @@ export default {
       value: 'Valeur',
       million: 'M',
       billion: 'Md',
-      trillion: 'T'
+      trillion: 'T',
+      buttons: {
+        collapse: 'Réduire',
+        expand: 'Développer',
+        close: 'Fermer',
+        order: "Changer l'ordre"
+      }
     },
     indicators: {
       AG_SRF_TOTL_K2: 'Superficie terrestre (km²)',

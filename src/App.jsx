@@ -26,7 +26,7 @@ function App() {
       }
     }
   }, []);
-  
+
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     localStorage.setItem('theme', newTheme);
@@ -55,7 +55,7 @@ function App() {
       <GlobeContext.Provider value={{ contextIndicatorData, setContextIndicatorData }}>
         <div className="container">
           <div className={`globe-container${searching ? ' disabled' : ''}`}>
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div className='loading-container'><div className='lds-ripple'><div></div><div></div></div></div>}>
               {
                 <Globe
                   theme={theme}

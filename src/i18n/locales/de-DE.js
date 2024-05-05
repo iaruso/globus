@@ -16,6 +16,11 @@ export default {
       info: {
         description: 'Erkunden Sie Statistiken zwischen den verschiedenen Ländern (basierend auf Daten der The World Bank Group).',
         sourceCode: 'Quellcode'
+      },
+      buttons: {
+        toggleTheme: 'Thema wechseln',
+        translate: 'Sprache ändern',
+        info: 'Info'
       }
     },
     info: {
@@ -24,7 +29,13 @@ export default {
       value: 'Wert',
       million: 'Mio',
       billion: 'Mrd',
-      trillion: 'Bio'
+      trillion: 'Bio',
+      buttons: {
+        collapse: 'Einklappen',
+        expand: 'Ausklappen',
+        close: 'Schließen',
+        order: 'Reihenfolge ändern'
+      }
     },
     indicators: {
       AG_SRF_TOTL_K2: "Fläche (km²)",
