@@ -10,13 +10,23 @@ export const GlobeContext = createContext();
 
 function App() {
   const { t } = useTranslation();
-  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+  const [theme, setTheme] = useState(localStorage.getItem('theme'));
   const [selectedInfo, setSelectedInfo] = useState(null);
   const [selectedCountry, setSelectedCountry] = useState(null);
   const [searching, setSearching] = useState(false);
   const [closed, setClosed] = useState(false);
   const [contextIndicatorData, setContextIndicatorData] = useState(null);
-
+  
+  useEffect(() => {
+    if (!theme) {
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        setTheme('dark');
+      } else {
+        setTheme('light');
+      }
+    }
+  }, []);
+  
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     localStorage.setItem('theme', newTheme);
