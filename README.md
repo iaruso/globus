@@ -1,7 +1,7 @@
 # Globus
 
 ### Discover a new way to explore the world with Globus - a three.js globe offering unique insights into global data. Easily access country-specific or indicator-based information and visualize it with detail.
-![](https://github.com/iaruso/globus/blob/main/public/github-cover.png)
+![](https://github.com/iaruso/globus/blob/main/public/cover-og.png)
 
 ### Features
 - Filter data by country or indicator
