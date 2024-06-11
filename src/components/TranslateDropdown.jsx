@@ -20,13 +20,13 @@ const TranslateDropdown = forwardRef(({ setOpenTranslateDropdown }, ref) => {
   }, [activeLanguage, initialRender]);
 
   const languages = {
-    'en': 'en-EN',
-    'ru': 'ru-RU',
-    'pt': 'pt-PT',
-    'es': 'es-ES',
-    'fr': 'fr-FR',
-    'de': 'de-DE',
-    'ja': 'ja-JA'
+    'en': 'en',
+    'ru': 'ru',
+    'pt': 'pt',
+    'es': 'es',
+    'fr': 'fr',
+    'de': 'de',
+    'ja': 'ja'
   };
 
   const handleLanguageChange = (languageCode) => {
